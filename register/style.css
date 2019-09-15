@@ -1,0 +1,58 @@
+.bg-blue {
+  background-color: #4e73df;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card{
+	position: relative;
+  	margin-left: 400px ;
+  	margin-right:400px;
+  	margin-top: 50px;
+  	background-color: #fff;
+  	border-radius: 0.35rem;
+}
+
+.card-body {
+	padding: 30px;
+  	padding: 1.25rem;
+  	border-top: 0 
+}
+
+.form-control {
+  display: block;
+  width: 300px;
+  height: 35px;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.btn-biru {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  width: 150px;
+  height: 50px;
+  border-radius: 10rem;
+  margin-left: 170px; 
+}
