@@ -21,8 +21,8 @@
 
 .card-body {
 	padding: 30px;
-  	padding: 1.25rem;
-  	border-top: 0 
+  padding: 1.25rem;
+  border-top: 0 
 }
 
 .row {
@@ -62,6 +62,19 @@
   margin-bottom: 1rem;
   margin-top: 10px;
   margin-left: 100px;
+}
+
+.font{
+  font-family: arial;
+  text-align: center;
+}
+
+.gender{
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
 }
 
 .btn-biru {
