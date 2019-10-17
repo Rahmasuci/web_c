@@ -71,8 +71,8 @@
 }
 
 .form-control {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
   height: 35px;
   padding: 5px;
@@ -87,6 +87,8 @@
 }
 
 .form-group {
+  position: relative;
+  width: 100%;
   margin-bottom: 1rem;
   margin-top: 10px;
   margin-left: 30px;
@@ -145,56 +147,40 @@
 }
 
 .sidenav {
-  height: 100%;
-  width: 230px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
   background-color: #02B49A;
-  overflow-x: hidden;
-  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
   display: block;
-  transition: 0.3s;
+  color: #fff;
+  padding: 16px;
+   font-size: 18px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 .main {
-  margin-left: 250px;
+  margin-left: 230px;
   color : #5a5c69;
   font-family : sans-serif;
-}
-
-.tabel{
-  width: 100%;
-  border: 1px solid #dddfeb;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-
-.tabel-profil{
-  width: 40%;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.tabel th{
-  border: 1px solid #dddfeb;
-  text-align: center;
-} 
-
-.tabel td{
-  border: 1px solid #dddfeb;
-}
-
-th {
-  text-align: right;
 }
 
 .dropdown .dropbtn {
@@ -233,6 +219,79 @@ th {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main {
+    margin-left: 10px;
+    float: left;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+  .dropdown{
+    float: left;
+  }
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: left;
+    float: none;
+  }
+  .main {
+    margin-left: 10px;
+    float: none;
+  }
+  .dropdown{
+    float: none;
+  }
+
+
+}
+
+
+.tabel{
+  width: 100%;
+  border: 1px solid #dddfeb;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.tabel-profil{
+  width: 40%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.tabel th{
+  border: 1px solid #dddfeb;
+  text-align: center;
+} 
+
+.tabel td{
+  border: 1px solid #dddfeb;
+}
+
+th {
+  text-align: right;
+}
+
+
+
+body{
+  margin: 0;
+}
+
+h2{
+  margin-top: 0
 }
 
 footer{
