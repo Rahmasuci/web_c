@@ -1,0 +1,307 @@
+.bg-blue {
+  background-color: #4e73df;
+}
+
+.bg-green {
+  background-color: #02B49A;
+}
+
+.bg-gray{
+  background-color: #EFF0F3;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  position: relative;
+  padding-left: 10px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 0.35rem;
+}
+
+.card-login {
+	position: relative;
+  padding: 20px;
+  margin-left: 200px ;
+  margin-right:200px;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 0.35rem;
+}
+
+.card-small{
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 0.35rem;
+  padding: 0;
+}
+
+.card-body-login, 
+.card-body,
+.card-body-small{
+  padding: 1.25rem;
+  border-top: 0 
+}
+
+.row {
+  display: flex;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.col-lg-7{
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.bg-image {
+  background-position: center;
+  background-size: cover;
+}
+
+.form-control {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.font{
+  font-family: arial;
+  text-align: center;
+}
+
+.gender{
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  width: 60px;
+  height: 25px;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #f6c23e;
+  border-color: #f6c23e;
+  width: 60px;
+  height: 25px;
+}
+.btn-green {
+  color: #fff;
+  background-color: #02B49A;
+  border-color: #02B49A;
+  width: 100px;
+  height: 50px;
+  margin-left: 160px;
+} 
+
+.btn-green-login {
+  color: #fff;
+  background-color: #02B49A;
+  border-color: #02B49A;
+  width: 150px;
+  height: 50px;
+  border-radius: 10rem;
+  margin-left: 115px; 
+} 
+
+.login{
+  position: center;
+  margin-top: 100px;
+}
+
+.sidenav {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #02B49A;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidenav a {
+  display: block;
+  color: #fff;
+  padding: 16px;
+   font-size: 18px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.main {
+  margin-left: 230px;
+  color : #5a5c69;
+  font-family : sans-serif;
+}
+
+.dropdown .dropbtn {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: #00DFC0;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #5a5c69;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #00DFC0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main {
+    margin-left: 10px;
+    float: left;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+  .dropdown{
+    float: left;
+  }
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: left;
+    float: none;
+  }
+  .main {
+    margin-left: 10px;
+    float: none;
+  }
+  .dropdown{
+    float: none;
+  }
+
+
+}
+
+
+.tabel{
+  width: 100%;
+  border: 1px solid #dddfeb;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.tabel-profil{
+  width: 40%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.tabel th{
+  border: 1px solid #dddfeb;
+  text-align: center;
+} 
+
+.tabel td{
+  border: 1px solid #dddfeb;
+}
+
+th {
+  text-align: right;
+}
+
+
+
+body{
+  margin: 0;
+}
+
+h2{
+  margin-top: 0
+}
+
+footer{
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 100%;
+  text-align: center;
+  color: #5a5c69;
+  background-color: #fff;
+  padding: 2rem 0;
+  line-height: 1;
+  font-size: 0.8rem;
+}

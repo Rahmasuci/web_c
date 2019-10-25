@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+    	<link href="./css/style.css" rel="stylesheet">
+    	<title>E-Learning - Ubah Akun</title>
+    </head>
+
+    <body class="bg-gray">
+    	<div id="mySidenav" class="sidenav font">
+        <a href="dashboard_admin.html">E-LEARNING</a>
+        <a href="dashboard_admin.html">Dashboard</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a>Kelola Akun</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="tambah_akun.html">Tambah Akun</a>
+            <a href="lihat_akun.html">Lihat Akun</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a>Kelola Mata Pelajaran</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="tambah_pelajaran.html">Tambah Mata Pelajaran</a>
+            <a href="lihat_pelajaran.html">Lihat Mata Pelajaran</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a>Kelola Kelas</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="tambah_kelas.html">Tambah Kelas</a>
+            <a href="lihat_kelas.html">Lihat Kelas</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a>Kelola Jadwal</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="tambah_jadwal.html">Tambah Jadwal</a>
+            <a href="lihat_jadwal.html">Lihat Jadwal</a>
+          </div>
+        </div>
+        <a href="profil_admin.html">Profil</a>
+        <a href="index.html">Logout</a>
+      </div>
+      
+      <div class= "main ">
+        <h2>Ubah Akun (Admin)</h2>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <h3>Ubah Akun</h3>
+            </div>
+            <form class="user">
+              <table>
+                <tr>
+                  <th>Nama : </th>
+                  <th><div class="form-group">
+                        <input type="text" class="form-control" id="InputName" value="Mustika Rahmasuci">
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Tempat Lahir : </th>
+                  <th><div class="form-group">
+                        <input type="text" class="form-control" id="InputTempat" value="Jember">
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Tanggal Lahir : </th>
+                  <th><div class="form-group">
+                        <input type="date" class="form-control" id="InputTglLahir" value="23/04/1998">
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Jenis Kelamin : </th>
+                  <th><div class="form-group row font">
+                        <div class="gender">
+                          <input type="radio" name="gender" value="Laki2"><label class="radio">Laki-Laki</label>
+                          <input type="radio" name="gender" value="Perempuan" checked><label class="radio" >Perempuan</label>
+                        </div>
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Jabatan : </th>
+                  <th><div class="form-group">
+                        <select name="jabatan" class="form-control" id="pilih-jabatan" style="width: 310px; height: 45px">
+                          <option value="1">Siswa</option>
+                          <option value="2">Guru</option>
+                          <option value="3">Admin</option>
+                        </select>
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>NIS: </th>
+                  <th><div class="form-group">
+                        <input type="number" class="form-control" id="InputID" value="16000">
+                      </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Status : </th>
+                  <th><div class="form-group row font">
+                        <div class="gender">
+                          <input type="radio" name="status" value="Aktif" checked><label class="radio">Aktif</label>
+                          <input type="radio" name="status" value="Non Aktif" ><label class="radio" >Tidak Aktif</label>
+                        </div>
+                      </div>
+                  </th>
+                </tr>
+              </table>
+              <button type="submit" class="btn-green">Simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>

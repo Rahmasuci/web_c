@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="./css/style.css" rel="stylesheet">
+	<title>E-Learning - Dashboard</title>
+</head>
+
+<body class="bg-gray">
+	<div class="sidenav font">
+    <a>E-LEARNING</a>
+    <a href="dashboard_guru.html">Dashboard</a>
+    <a href="jadwal_guru.html">Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a>Kelola Materi</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="tambah_materi.html">Tambah Materi</a>
+        <a href="lihat_materi.html">Lihat Materi</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a>Kelola Tugas</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="tambah_tugas.html">Tambah Tugas</a>
+        <a href="lihat_tugas.html">Lihat Tugas</a>
+      </div>
+    </div>
+    <a href="profil_guru.html">Profil</a>
+    <a href="index.html">Logout</a>
+  </div>
+
+  <div class= "main ">
+    <h2>Lihat Tugas</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Daftar Tugas yg diberikan</h3>
+        </div>
+        <table class="tabel">
+          <tr>
+            <th>Mata Pelajaran</th>
+            <th>Kelas</th>
+            <th>Deskripsi</th>
+            <th>Deadline</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>Kimia</td>
+            <td>10A</td>
+            <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
+            <td>11/09/2019</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'detail_tugas.html'">Lihat</button>
+                <button class="btn-orange" onclick="window.location.href = 'edit_tugas.html'">Edit</button>
+            </td>
+          </a>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
