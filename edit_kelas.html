@@ -52,44 +52,36 @@
   </div>
 
   <div class= "main ">
-    <h2>Dashboard Admin</h2>
-    <div class="row">
-      <div class="card-small">
-        <div class="card-body-small">
-          <h5>Jumlah User</h5>
-          <h1>100</h1>
-          <a href="lihat_akun.html">Lihat</a>
+    <h2>Ubah Kelas</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Ubah Kelas</h3>
         </div>
-      </div>  
-      <div class="card-small">
-        <div class="card-body-small">
-          <h5>Jumlah Pelajaran</h5>
-          <h1>6</h1>
-          <a href="lihat_pelajaran.html">Lihat</a>
-        </div>
-      </div> 
-      <div class="card-small">
-        <div class="card-body-small">
-          <h5>Jumlah Kelas</h5>
-          <h1>6</h1>
-          <a href="lihat_kelas.html">Lihat</a>
-        </div>
-      </div> 
-      <div class="card-small">
-        <div class="card-body-small">
-          <h5>Jumlah Jadwal</h5>
-          <h1>18</h1>
-          <a href="lihat_jadwal.html">Lihat</a>
-        </div>
-      </div>     
-    </div>
-
+        <form class="user">
+          <table>
+            <tr>
+              <th>Kelas : </th>
+              <th><div class="form-group">
+                <input type="text" class="form-control" id="InputKelas" value="10A">
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>Status : </th>
+            <th><div class="form-group row font">
+              <div class="gender">
+                <input type="radio" name="status" value="Aktif" checked><label class="radio">Aktif</label>
+                <input type="radio" name="status" value="Non Aktif" ><label class="radio" >Tidak Aktif</label>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </table>
+      <button type="submit" class="btn-green">Simpan</button>
+    </form>
   </div>
-<!-- <footer>
-    <div>
-      <span>Copyright &copy; e-learning 2019</span>
-    </div>
-  </footer>  -->
+</div>
+</div>
 </body>
 </html>
-

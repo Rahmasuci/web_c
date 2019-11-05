@@ -3,7 +3,7 @@
 
     <head>
     	<link href="./css/style.css" rel="stylesheet">
-    	<title>E-Learning - Tambah Akun</title>
+    	<title>E-Learning - Ubah Akun</title>
     </head>
 
     <body class="bg-gray">
@@ -46,38 +46,37 @@
             <a href="lihat_jadwal.html">Lihat Jadwal</a>
           </div>
         </div>
-    
-    <a href="profil_admin.html">Profil</a>
-    <a href="index.html">Logout</a>
-  </div>
+        <a href="profil_admin.html">Profil</a>
+        <a href="index.html">Logout</a>
+      </div>
       
       <div class= "main ">
-        <h2>Tambah Akun</h2>
+        <h2>Ubah Akun (Admin)</h2>
         <div class="card">
           <div class="card-body">
             <div class="row">
-              <h3>Daftarkan Akun Baru</h3>
+              <h3>Ubah Akun</h3>
             </div>
             <form class="user">
               <table>
                 <tr>
                   <th>Nama : </th>
                   <th><div class="form-group">
-                        <input type="text" class="form-control" id="InputName" placeholder="Nama Lengkap">
+                        <input type="text" class="form-control" id="InputName" value="Mustika Rahmasuci">
                       </div>
                   </th>
                 </tr>
                 <tr>
                   <th>Tempat Lahir : </th>
                   <th><div class="form-group">
-                        <input type="text" class="form-control" id="InputTempat" placeholder="Tempat Lahir">
+                        <input type="text" class="form-control" id="InputTempat" value="Jember">
                       </div>
                   </th>
                 </tr>
                 <tr>
                   <th>Tanggal Lahir : </th>
                   <th><div class="form-group">
-                        <input type="date" class="form-control" id="InputTglLahir">
+                        <input type="date" class="form-control" id="InputTglLahir" value="23/04/1998">
                       </div>
                   </th>
                 </tr>
@@ -86,7 +85,7 @@
                   <th><div class="form-group row font">
                         <div class="gender">
                           <input type="radio" name="gender" value="Laki2"><label class="radio">Laki-Laki</label>
-                          <input type="radio" name="gender" value="Perempuan"/><label class="radio">Perempuan</label>
+                          <input type="radio" name="gender" value="Perempuan" checked><label class="radio" >Perempuan</label>
                         </div>
                       </div>
                   </th>
@@ -95,30 +94,32 @@
                   <th>Jabatan : </th>
                   <th><div class="form-group">
                         <select name="jabatan" class="form-control" id="pilih-jabatan" style="width: 310px; height: 45px">
-                          <option value="1">Jabatan</option>
-                          <option value="2">Siswa</option>
-                          <option value="3">Guru</option>
-                          <option value="4">Admin</option>
+                          <option value="1">Siswa</option>
+                          <option value="2">Guru</option>
+                          <option value="3">Admin</option>
                         </select>
                       </div>
                   </th>
                 </tr>
                 <tr>
-                  <th>NIS / NIP : </th>
+                  <th>NIS: </th>
                   <th><div class="form-group">
-                        <input type="number" class="form-control" id="InputID" placeholder="NIS/NIP">
+                        <input type="number" class="form-control" id="InputID" value="16000">
                       </div>
                   </th>
                 </tr>
                 <tr>
-                  <th>Password : </th>
-                  <th><div class="form-group">
-                        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                  <th>Status : </th>
+                  <th><div class="form-group row font">
+                        <div class="gender">
+                          <input type="radio" name="status" value="Aktif" checked><label class="radio">Aktif</label>
+                          <input type="radio" name="status" value="Non Aktif" ><label class="radio" >Tidak Aktif</label>
+                        </div>
                       </div>
                   </th>
                 </tr>
               </table>
-              <button type="submit" class="btn-green">Daftar Akun</button>
+              <button type="submit" class="btn-green">Simpan</button>
             </form>
           </div>
         </div>

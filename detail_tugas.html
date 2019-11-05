@@ -3,7 +3,7 @@
 
 <head>
 	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Profil</title>
+	<title>E-Learning - Dashboard</title>
 </head>
 
 <body class="bg-gray">
@@ -32,41 +32,43 @@
     <a href="profil_guru.html">Profil</a>
     <a href="index.html">Logout</a>
   </div>
-  
+
   <div class= "main ">
-  <h2>Profil Mu</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Profil Guru</h3>
-      </div>
-      <table class="tabel-profil">
-        <tr>
-          <th>Nama</th>
-          <td>: Bayu Putra</td>  
+    <h2>Detail Tugas</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Detail Tugas yang diberikan</h3>
+        </div>
+        <div>
+          <p>Mata Pelajaran : Kimia</p>
+          <p>Kelas : 10A</p>
+          <p>Deskripsi : Mengerjakan Latihan Soal di Buku halaman 11</p>
+          <p>Deadline : 11/09/2019</p>
+        </div>
+        <table class="tabel">
+          <tr>
+            <th>Kelas</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Tanggal Kumpulkan</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>10A</td>
+            <td>16000</td>
+            <td>Mustika Rahmasuci</td>
+            <td>11/09/2019</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'detail_tugas.html'">Lihat</button>
+                <button class="btn-orange">Unduh</button>
+            </td>
+          </a>
         </tr>
-         <tr>
-          <th>NIP</th>
-          <td>: 19xxxxxxxxxxxx</td>  
-        </tr>
-        <tr>
-          <th>Mengajar Bidang</th>
-          <td>: Kimia</td>  
-        </tr>
-         <tr>
-          <th>Tempat, tanggal lahir</th>
-          <td>: Banyuwangi, 18 Desember 1988</td>  
-        </tr>
-         <tr>
-          <th>Jenis Kelamin</th>
-          <td>: Laki-Laki</td>  
-        </tr>
-        
       </table>
+      </div>
     </div>
+
   </div>
-  
-   <br>
-  </div>
+
 </body>
 </html>
