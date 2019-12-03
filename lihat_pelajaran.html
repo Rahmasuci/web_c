@@ -2,18 +2,26 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="./css/all.css">
+ <link rel="stylesheet" href="./css/all.css">
  <link href="./css/style.css" rel="stylesheet">
  <title>E-Learning - Lihat Mata Pelajaran</title>
 </head>
 
 <body class="bg-gray">
  <div id="mySidenav" class="sidenav font">
-  <a href="dashboard_admin.html">E-LEARNING</a>
-  <a href="dashboard_admin.html">Dashboard</a>
+  <a href="dashboard_admin.html">
+    <i class="fas fa-book-reader"></i>
+    E-LEARNING
+  </a>
+  <a href="dashboard_admin.html">
+    <i class="fas fa-tachometer-alt"></i>
+    Dashboard
+  </a>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Akun</a>
+      <a><i class="fas fa-user-cog"></i>
+        Kelola Akun
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_akun.html">Tambah Akun</a>
@@ -22,7 +30,9 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Mata Pelajaran</a>
+      <a><i class="fas fa-clipboard-list"></i>
+        Kelola Mata Pelajaran
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_pelajaran.html">Tambah Mata Pelajaran</a>
@@ -31,7 +41,9 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Kelas</a>
+      <a><i class="fas fa-school"></i>
+        Kelola Kelas
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_kelas.html">Tambah Kelas</a>
@@ -40,7 +52,9 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Jadwal</a>
+      <a><i class="fas fa-calendar-day"></i>
+        Kelola Jadwal
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_jadwal.html">Tambah Jadwal</a>
@@ -48,61 +62,70 @@
     </div>
   </div>
   
-  <a href="profil_admin.html">Profil</a>
-  <a href="index.html">Logout</a>
+  <a href="profil_admin.html">
+    <i class="fas fa-user-circle"></i>
+    Profil
+  </a>
+  <a href="index.html">
+    <i class="fas fa-sign-out-alt"></i>
+    Logout
+  </a>
 </div>
 
 <div class= "main ">
+  <br>
   <h2>Lihat Mata Pelajaran</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Daftar Mata Pelajaran</h3>
+  <div style="max-width: 97%">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Daftar Mata Pelajaran</h3>
+        </div>
+        <table class="tabel">
+          <tr>
+            <th>No</th>
+            <th>Mata Pelajaran</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Bahasa Indonesia</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bahasa Inggris</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Biologi</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Fisika</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Kimia</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Matematika</td>
+            <td>Aktif</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
+          </tr>
+        </table>
       </div>
-      <table class="tabel">
-        <tr>
-          <th>No</th>
-          <th>Mata Pelajaran</th>
-          <th>Status</th>
-          <th>Aksi</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Bahasa Indonesia</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Bahasa Inggris</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Biologi</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Fisika</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Kimia</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Matematika</td>
-          <td>Aktif</td>
-          <td><button class="btn-blue" onclick="window.location.href = 'edit_pelajaran.html'">Edit</button></td>
-        </tr>
-      </table>
     </div>
   </div>
 </div>

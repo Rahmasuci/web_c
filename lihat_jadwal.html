@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-      <link href="./css/style.css" rel="stylesheet">
-       <link rel="stylesheet" href="./css/all.css">
-      <title>E-Learning - Lihat Jadwal</title>
-    </head>
+<head>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Lihat Jadwal</title>
+</head>
 
-    <body class="bg-gray">
-      <div id="mySidenav" class="sidenav font">
-    <a href="dashboard_admin.html">E-LEARNING</a>
-    <a href="dashboard_admin.html">Dashboard</a>
+<body class="bg-gray">
+  <div id="mySidenav" class="sidenav font">
+    <a href="dashboard_admin.html">
+      <i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_admin.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Akun</a>
+        <a><i class="fas fa-user-cog"></i>
+          Kelola Akun
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_akun.html">Tambah Akun</a>
@@ -22,7 +30,9 @@
     </div>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Mata Pelajaran</a>
+        <a><i class="fas fa-clipboard-list"></i>
+          Kelola Mata Pelajaran
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_pelajaran.html">Tambah Mata Pelajaran</a>
@@ -31,7 +41,9 @@
     </div>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Kelas</a>
+        <a><i class="fas fa-school"></i>
+          Kelola Kelas
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_kelas.html">Tambah Kelas</a>
@@ -40,7 +52,9 @@
     </div>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Jadwal</a>
+        <a><i class="fas fa-calendar-day"></i>
+          Kelola Jadwal
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_jadwal.html">Tambah Jadwal</a>
@@ -48,228 +62,236 @@
       </div>
     </div>
     
-    <a href="profil_admin.html">Profil</a>
-    <a href="index.html">Logout</a>
+    <a href="profil_admin.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
   </div>
 
-
-      <div class= "main ">
-        <h2>Lihat Jadwal</h2>
-         <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <h3>Semua Jadwal </h3>
-        </div>
-        <table class="tabel">
-          <tr>
-            <th>No</th>
-            <th>Kelas</th>
-            <th>Hari</th>
-            <th>Mata Pelajaran</th>
-            <th>Guru</th>
-            <th>Jam</th> 
-            <th>Aksi</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>10A</td>
-            <td>Senin</td>
-            <td>Matematika</td>
-            <td>Pak Indro</td>
-            <td>08.00 - 09.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+  <div class= "main ">
+    <br>
+    <h2>Lihat Jadwal</h2>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Semua Jadwal </h3>
+          </div>
+          <table class="tabel">
+            <tr>
+              <th>No</th>
+              <th>Kelas</th>
+              <th>Hari</th>
+              <th>Mata Pelajaran</th>
+              <th>Guru</th>
+              <th>Jam</th> 
+              <th>Aksi</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>10A</td>
+              <td>Senin</td>
+              <td>Matematika</td>
+              <td>Pak Indro</td>
+              <td>08.00 - 09.30</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>10A</td>
-            <td>Senin</td>
-            <td>Bahasa Indonesia</td>
-            <td>Bu Susi</td>
-            <td>09.30 - 11.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>10A</td>
+              <td>Senin</td>
+              <td>Bahasa Indonesia</td>
+              <td>Bu Susi</td>
+              <td>09.30 - 11.00</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>10A</td>
-            <td>Senin</td>
-            <td>Istirahat</td>
-            <td>-</td>
-            <td>11.00 - 12.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>10A</td>
+              <td>Senin</td>
+              <td>Istirahat</td>
+              <td>-</td>
+              <td>11.00 - 12.00</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>10A</td>
-            <td>Senin</td>
-            <td>Fisika</td>
-            <td>Pak Tris</td>
-            <td>12.00 - 13.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>10A</td>
+              <td>Senin</td>
+              <td>Fisika</td>
+              <td>Pak Tris</td>
+              <td>12.00 - 13.30</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>10A</td>
-            <td>Selasa</td>
-            <td>Kimia</td>
-            <td>Pak Bayu</td>
-            <td>08.00 - 09.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>10A</td>
+              <td>Selasa</td>
+              <td>Kimia</td>
+              <td>Pak Bayu</td>
+              <td>08.00 - 09.00</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>10A</td>
-            <td>Selasa</td>
-            <td>Bahasa Inggris</td>
-            <td>Mr. David</td>
-            <td>09.30 - 11.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>10A</td>
+              <td>Selasa</td>
+              <td>Bahasa Inggris</td>
+              <td>Mr. David</td>
+              <td>09.30 - 11.00</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>10A</td>
-            <td>Selasa</td>
-            <td>Istirahat</td>
-            <td>- </td>
-            <td>11.00 - 12.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>10A</td>
+              <td>Selasa</td>
+              <td>Istirahat</td>
+              <td>- </td>
+              <td>11.00 - 12.00</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>10A</td>
-            <td>Selasa</td>
-            <td>Biologi</td>
-            <td>Bu Bunga</td>
-            <td>12.00 - 13.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>10A</td>
+              <td>Selasa</td>
+              <td>Biologi</td>
+              <td>Bu Bunga</td>
+              <td>12.00 - 13.30</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-           <tr>
-            <td>9</td>
-            <td>10A</td>
-            <td>Rabu</td>
-            <td>Matematika</td>
-            <td>Pak Indro</td>
-            <td>08.00 - 09.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10A</td>
+              <td>Rabu</td>
+              <td>Matematika</td>
+              <td>Pak Indro</td>
+              <td>08.00 - 09.30</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
                 <button class="btn-orange">Hapus</button>
-            </td>
-          <tr>
-            <td>10</td>
-            <td>10A</td>
-            <td>Rabu</td>
-            <td>Bahasa Indonesia</td>
-            <td>Bu Susi</td>
-            <td>09.30 - 11.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>10A</td>
-            <td>Rabu</td>
-            <td>Istirahat</td>
-            <td>- </td>
-            <td>11.00 - 12.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>10A</td>
-            <td>Rabu</td> 
-            <td>Fisika</td>
-            <td>Pak Tris</td>
-            <td>12.00 - 13.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>10A</td>
-            <td>Kamis</td>
-            <td>Kimia</td>
-            <td>Pak Bayu</td>
-            <td>08.00 - 09.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>10A</td>
-            <td>Kamis</td>
-            <td>Bahasa Inggris</td>
-            <td>Mr. David</td>
-            <td>09.30 - 11.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>10A</td>
-            <td>Kamis</td>
-            <td>Istirahat</td>
-            <td>- </td>
-            <td>11.00 - 12.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>10A</td>
-            <td>Kamis</td>
-            <td>Biologi</td>
-            <td>Bu Bunga</td>
-            <td>12.00 - 13.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>            
-            <td>17</td>
-            <td>10A</td>
-            <td>Jumat</td>
-            <td>Matematika</td>
-            <td>Pak Indro</td>
-            <td>07.30 - 09.00</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>10A</td>
-            <td>Jumat</td>
-            <td>Bahasa Indonesia</td>
-            <td>Bu Susi</td >
-            <td>09.00 - 10.30</td>
-            <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
-                <button class="btn-orange">Hapus</button>
-            </td>
-          </tr>
-        </table>
+              </td>
+              <tr>
+                <td>10</td>
+                <td>10A</td>
+                <td>Rabu</td>
+                <td>Bahasa Indonesia</td>
+                <td>Bu Susi</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>10A</td>
+                <td>Rabu</td>
+                <td>Istirahat</td>
+                <td>- </td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>10A</td>
+                <td>Rabu</td> 
+                <td>Fisika</td>
+                <td>Pak Tris</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Kimia</td>
+                <td>Pak Bayu</td>
+                <td>08.00 - 09.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Bahasa Inggris</td>
+                <td>Mr. David</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Istirahat</td>
+                <td>- </td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Biologi</td>
+                <td>Bu Bunga</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>            
+                <td>17</td>
+                <td>10A</td>
+                <td>Jumat</td>
+                <td>Matematika</td>
+                <td>Pak Indro</td>
+                <td>07.30 - 09.00</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>10A</td>
+                <td>Jumat</td>
+                <td>Bahasa Indonesia</td>
+                <td>Bu Susi</td >
+                <td>09.00 - 10.30</td>
+                <td><button class="btn-blue" onclick="window.location.href = 'edit_jadwal.html'">Edit</button>
+                  <button class="btn-orange">Hapus</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>  
       </div>
-      </div>  
-      </div>
-    </body>
+    </div>
+  </body>
   </html>

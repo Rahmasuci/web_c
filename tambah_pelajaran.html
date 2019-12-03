@@ -3,17 +3,25 @@
 
 <head>
  <link href="./css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/all.css">
+ <link rel="stylesheet" href="./css/all.css">
  <title>E-Learning - Tambah Mata Pelajaran</title>
 </head>
 
 <body class="bg-gray">
  <div id="mySidenav" class="sidenav font">
-  <a href="dashboard_admin.html">E-LEARNING</a>
-  <a href="dashboard_admin.html">Dashboard</a>
+  <a href="dashboard_admin.html">
+    <i class="fas fa-book-reader"></i>
+    E-LEARNING
+  </a>
+  <a href="dashboard_admin.html">
+    <i class="fas fa-tachometer-alt"></i>
+    Dashboard
+  </a>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Akun</a>
+      <a><i class="fas fa-user-cog"></i>
+        Kelola Akun
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_akun.html">Tambah Akun</a>
@@ -22,7 +30,9 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Mata Pelajaran</a>
+      <a><i class="fas fa-clipboard-list"></i>
+        Kelola Mata Pelajaran
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_pelajaran.html">Tambah Mata Pelajaran</a>
@@ -31,7 +41,9 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Kelas</a>
+      <a><i class="fas fa-school"></i>
+        Kelola Kelas
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_kelas.html">Tambah Kelas</a>
@@ -40,40 +52,50 @@
   </div>
   <div class="dropdown">
     <button class="dropbtn">
-      <a>Kelola Jadwal</a>
+      <a><i class="fas fa-calendar-day"></i>
+        Kelola Jadwal
+      </a>
     </button>
     <div class="dropdown-content">
       <a href="tambah_jadwal.html">Tambah Jadwal</a>
       <a href="lihat_jadwal.html">Lihat Jadwal</a>
     </div>
   </div>
-  
-  <a href="profil_admin.html">Profil</a>
-  <a href="index.html">Logout</a>
+
+  <a href="profil_admin.html">
+    <i class="fas fa-user-circle"></i>
+    Profil
+  </a>
+  <a href="index.html">
+    <i class="fas fa-sign-out-alt"></i>
+    Logout
+  </a>
 </div>
 
 <div class= "main ">
+  <br>
   <h2>Tambah Pelajaran</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
+  <div style="max-width: 97%">
+    <div class="card">
+      <div class="card-body">
         <h3>Tambahkan Mata Pelajaran Baru</h3>
-      </div>
-      <form class="user">
-        <table>
-          <tr>
-            <th>Mata Pelajaran : </th>
-            <th><div class="form-group">
-              <input type="text" class="form-control" id="InputName" placeholder="Mata Pelajaran">
-            </div>
-          </th>
-        </tr>
-      </table>
-      <button type="submit" class="btn-green">Simpan</button>
-    </form>
+        <form class="user">
+          <table>
+            <tr>
+              <th>Mata Pelajaran : </th>
+              <th><div class="form-group">
+                <input type="text" class="form-control" id="InputName" placeholder="Mata Pelajaran">
+              </div>
+            </th>
+          </tr>
+        </table>
+        <button type="submit" class="btn-green">Simpan</button>
+      </form>
+    </div>
   </div>
 </div>
 </div>
+
 </body>
 </html>
 
