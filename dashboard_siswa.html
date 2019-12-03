@@ -14,17 +14,30 @@
     });
   </script>
   <link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Dashboard</title>
+  <link rel="stylesheet" href="./css/all.css">
+  
+  <title>E-Learning - Dashboard</title>
 </head>
 
 <body class="bg-gray">
 	<div class="sidenav font">
-    <a>E-LEARNING</a>
-    <a href="dashboard_siswa.html">Dashboard</a>
-    <a href="jadwal_siswa.html">Jadwal</a>
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_siswa.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Mata Pelajaran</a>
+        <a><i class="fas fa-clipboard-list"></i>
+          Mata Pelajaran
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="bi.html">Bahasa Indonesia</a>
@@ -35,55 +48,102 @@
         <a href="mtk.html">Matematika</a>
       </div>
     </div>
-    <a href="tugas_siswa.html">Tugas</a>
-    <a href="profil_siswa.html">Profil</a>
-    <a href="index.html">Logout</a>
+    <a href="tugas_siswa.html">
+      <i class="fas fa-list"></i>
+      Tugas
+    </a>
+    <a href="profil_siswa.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
   </div>
 
-<div class= "main ">
-  <h2>Dashboard Siswa</h2>
-  <div class="row">
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Bahasa Indonesia</h3>
-        <a href="bi.html">Lihat</a>
+  <div class= "main ">
+    <br>
+    <h2>Dashboard Siswa</h2>
+    <div class="row">
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Bahasa Indonesia
+              <i class="fas fa-book-open"></i>
+            </h3>
+            <a href="bi.html">Lihat 
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Bahasa Inggris
+              <i class="fas fa-book-open"></i>
+            </h3>
+            <a href="bing.html">Lihat
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32"> 
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Biologi
+              <i class="fas fa-book-medical"></i>
+            </h3>
+            <a href="bio.html">Lihat
+             <i class="fas fa-arrow-circle-right"></i>
+           </a>
+         </div>
+       </div>
+     </div>   
+   </div>
+   <div class="row">
+    <div class="size-32">
+      <div class="card-small">
+        <div class="card-body-small">
+          <h3>Matematika
+            <i class="fa fa-calculator" ></i>
+          </h3>
+          <a href="mtk.html">Lihat
+           <i class="fas fa-arrow-circle-right"></i>
+         </a>
+       </div>
+     </div>
+   </div>
+   <div class="size-32">
     <div class="card-small">
       <div class="card-body-small">
-        <h3>Bahasa Inggris</h3>
-        <a href="bing.html">Lihat</a>
+        <h3>Fisika
+          <i class="fas fa-bong"></i>
+        </h3>
+        <a href="fisika.html">Lihat
+          <i class="fas fa-arrow-circle-right"></i>
+        </a>
       </div>
     </div> 
+  </div>
+  <div class="size-32">
     <div class="card-small">
       <div class="card-body-small">
-        <h3>Biologi</h3>
-        <a href="bio.html">Lihat</a>
+        <h3>Kimia
+          <i class="fas fa-atom"></i>
+        </h3>
+        <a href="kimia.html">Lihat
+          <i class="fas fa-arrow-circle-right"></i>
+        </a>
       </div>
     </div>   
   </div>
-  <div class="row">
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Matematika</h3>
-        <a href="mtk.html">Lihat</a>
-      </div>
-    </div>
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Fisika</h3>
-        <a href="fisika.html">Lihat</a>
-      </div>
-    </div> 
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Kimia</h3>
-        <a href="kimia.html">Lihat</a>
-      </div>
-    </div>   
-  </div>
+</div>
 
-  <br>
+<br>
+<div style="max-width: 97%">
   <div class="card">
     <div class="card-body">
       <div class="row">
@@ -91,12 +151,10 @@
       </div>
       <table class="tabel">
         <tr>
-          <th>Hari</th>
           <th>Mata Pelajaran</th>
           <th>Jam</th>
         </tr>
         <tr>
-          <td rowspan="4">Selasa</td>
           <td>Kimia</td>
           <td>08.00 - 09.00</td>
         </tr>
@@ -115,8 +173,10 @@
       </table>
     </div>
   </div>
-  
-   <br>
+</div>
+
+<br>
+<div style="max-width: 97%; margin-bottom: 30px;">
   <div class="card">
     <div class="card-body">
       <div class="row">
@@ -137,20 +197,23 @@
           <th>Aksi</th>
         </tr>
         <tbody id="myTable">
-        <tr>
-          <td>Matematika</td>
-          <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
-          <td>11/09/2019</td>
-          <td></td>
-          <td>Belum dikerjakan</td>
-          <td><button class="btn-orange">Submit</button></td>
+          <tr>
+            <td>Matematika</td>
+            <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
+            <td>11/09/2019</td>
+            <td></td>
+            <td>Belum dikerjakan</td>
+            <td><button class="btn-orange">Submit</button></td>
           </a>
         </tr>
-        </tbody>
-      </table>
-    </div>
+      </tbody>
+    </table>
   </div>
 </div>
+</div>
+
+</div>
+
 <!-- <footer>
     <div>
       <span>Copyright &copy; e-learning 2019</span>

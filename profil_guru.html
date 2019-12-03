@@ -3,17 +3,28 @@
 
 <head>
 	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Profil</title>
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Profil</title>
 </head>
 
 <body class="bg-gray">
 	<div class="sidenav font">
-    <a>E-LEARNING</a>
-    <a href="dashboard_guru.html">Dashboard</a>
-    <a href="jadwal_guru.html">Jadwal</a>
+    <a><i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_guru.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_guru.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Materi</a>
+        <a><i class="fas fa-stream"></i>
+          Kelola Materi
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_materi.html">Tambah Materi</a>
@@ -22,51 +33,62 @@
     </div>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Kelola Tugas</a>
+        <a><i class="fas fa-th-list"></i>
+          Kelola Tugas
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="tambah_tugas.html">Tambah Tugas</a>
         <a href="lihat_tugas.html">Lihat Tugas</a>
       </div>
     </div>
-    <a href="profil_guru.html">Profil</a>
-    <a href="index.html">Logout</a>
+    <a href="profil_guru.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
   </div>
   
   <div class= "main ">
-  <h2>Profil Mu</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Profil Guru</h3>
+    <br>
+    <h2>Profil Mu</h2>
+    <div style="max-width: 97%">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Profil Guru</h3>
+        </div>
+        <table class="tabel-profil">
+          <tr>
+            <th>Nama</th>
+            <td>: Bayu Putra</td>  
+          </tr>
+          <tr>
+            <th>NIP</th>
+            <td>: 19xxxxxxxxxxxx</td>  
+          </tr>
+          <tr>
+            <th>Mengajar Bidang</th>
+            <td>: Kimia</td>  
+          </tr>
+          <tr>
+            <th>Tempat, tanggal lahir</th>
+            <td>: Banyuwangi, 18 Desember 1988</td>  
+          </tr>
+          <tr>
+            <th>Jenis Kelamin</th>
+            <td>: Laki-Laki</td>  
+          </tr>
+
+        </table>
       </div>
-      <table class="tabel-profil">
-        <tr>
-          <th>Nama</th>
-          <td>: Bayu Putra</td>  
-        </tr>
-         <tr>
-          <th>NIP</th>
-          <td>: 19xxxxxxxxxxxx</td>  
-        </tr>
-        <tr>
-          <th>Mengajar Bidang</th>
-          <td>: Kimia</td>  
-        </tr>
-         <tr>
-          <th>Tempat, tanggal lahir</th>
-          <td>: Banyuwangi, 18 Desember 1988</td>  
-        </tr>
-         <tr>
-          <th>Jenis Kelamin</th>
-          <td>: Laki-Laki</td>  
-        </tr>
-        
-      </table>
     </div>
-  </div>
-  
-   <br>
+    </div>
+
+    <br>
   </div>
 </body>
 </html>
