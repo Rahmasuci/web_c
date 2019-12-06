@@ -2,20 +2,9 @@
 <html lang="en">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("#myInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#myTable tr").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-  </script>
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>E-Learning - Dashboard</title>
 </head>
 
@@ -184,7 +173,6 @@
       </div>
       <div>
         <input id="myInput" type="text" placeholder="Search..">
-
       </div>
       <br>
       <table class="tabel">
@@ -211,14 +199,14 @@
   </div>
 </div>
 </div>
-
 </div>
 
-<!-- <footer>
-    <div>
-      <span>Copyright &copy; e-learning 2019</span>
-    </div>
-  </footer>  -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  cariTabel();
+</script>
+
 </body>
 </html>
 

@@ -36,6 +36,13 @@
   border-radius: 0.35rem;
 }
 
+@media screen and (max-width: 420px){
+  .card-login {
+    margin-left: 10px ;
+    margin-right:10px;
+  }
+}
+
 .card-small{
   position: relative;
   margin-left: 10px;
@@ -61,8 +68,8 @@
 }
 .row {
   display: flex;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  /*margin-right: 20px;*/
+  margin-left: 3px;
 }
 
 .col-lg-7{
@@ -118,17 +125,31 @@
   color: #fff;
   background-color: #4e73df;
   border-color: #4e73df;
-  width: 60px;
-  height: 25px;
+  border-radius: 10px;
+}
+
+.width-65 {
+  width: 65px;
+}
+
+.height-30{
+  height: 30px;
 }
 
 .btn-orange {
   color: #fff;
   background-color: #f6c23e;
   border-color: #f6c23e;
-  width: 60px;
-  height: 25px;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.margin-left {
+  margin-left: 60%;
+}
+
 .btn-green {
   color: #fff;
   background-color: #02B49A;
@@ -136,6 +157,7 @@
   width: 100px;
   height: 50px;
   margin-left: 160px;
+  border-radius: 10px;
 } 
 
 .btn-green-login {
@@ -145,12 +167,13 @@
   width: 150px;
   height: 50px;
   border-radius: 10rem;
-  margin-left: 115px; 
+  margin-left: 30px; 
 } 
 
 .login{
   position: center;
-  margin-top: 100px;
+  padding: 75px;
+  margin-top: 50px;
 }
 
 .sidenav {
@@ -167,7 +190,7 @@
   display: block;
   color: #fff;
   padding: 16px;
-   font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -246,7 +269,12 @@ div.content {
   .dropdown{
     float: left;
   }
-
+  .btn-orange {
+    margin-left: 50px;
+  }
+  .btn-blue{
+    height: 50px;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -262,8 +290,13 @@ div.content {
   .dropdown{
     float: none;
   }
-
-
+  .btn-orange {
+    margin-left: 20px;
+    width: 175px; 
+  }
+  .btn-blue{
+    height: 50px;
+  }
 }
 
 
@@ -324,4 +357,78 @@ footer{
 
 .size-32 {
   width: 32%;
+}
+
+.size-50 {
+  widows: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
