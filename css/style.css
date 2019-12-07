@@ -126,6 +126,15 @@
   background-color: #4e73df;
   border-color: #4e73df;
   border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-blue2 {
+  color: #fff;
+  background-color: #4e73df;
+  border-radius: 5px;
+  padding: 5px;
+  float: right;
 }
 
 .width-65 {
@@ -136,12 +145,14 @@
   height: 30px;
 }
 
+.height-100{
+  height: 100px;
+}
+
 .btn-orange {
   color: #fff;
   background-color: #f6c23e;
   border-color: #f6c23e;
-  width: 150px;
-  height: 50px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -150,24 +161,46 @@
   margin-left: 60%;
 }
 
+.width-150{
+  width: 150px;
+}
+
+.height-50{
+  height: 50px;
+}
+
+.width-100{
+  width: 100px;
+}
+
 .btn-green {
   color: #fff;
   background-color: #02B49A;
   border-color: #02B49A;
-  width: 100px;
-  height: 50px;
-  margin-left: 160px;
+  /*margin-left: 160px;*/
   border-radius: 10px;
+  padding: 10px;
 } 
 
+.margin-left-10{
+  margin-left: 10%;
+}
+
+.margin-left-13{
+  margin-left: 13%;
+}
+
+.margin-left-20{
+  margin-left: 20%;
+}
 .btn-green-login {
   color: #fff;
   background-color: #02B49A;
   border-color: #02B49A;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  padding: 10px;
   border-radius: 10rem;
-  margin-left: 30px; 
+  margin-left: 25%; 
 } 
 
 .login{
@@ -308,8 +341,9 @@ div.content {
 }
 
 .tabel-profil{
-  width: 40%;
-  margin-bottom: 10px;
+  width: 100%;
+  /*margin-bottom: 10px;*/
+  padding: 10px;
   text-align: left;
 }
 
@@ -326,7 +360,7 @@ div.content {
 }
 
 th {
-  text-align: right;
+  text-align: left;
 }
 
 
@@ -336,7 +370,8 @@ body{
 }
 
 h2{
-  margin-top: 0
+  padding: : 3;
+  margin: 0;
 }
 
 footer{
@@ -389,8 +424,57 @@ footer{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
+  animation-name: show_modal;
   animation-duration: 0.4s
+}
+
+.modal-header {
+  padding: 8px;
+  background-color: #02B49A;
+  color: white;
+}
+
+.modal-body {padding: 16px;}
+
+.modal-footer{
+  padding: 5px;
+  overflow: hidden;
+  background-color: rgb(240,240,240);
+}
+
+.error-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 43%;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.5);
+  animation-name: show_modal;
+  -webkit-animation-name: animatetop;
+}
+
+.error-modal .modal-header{
+  background-color: red;
+}
+
+.error-modal .modal-body{
+  text-align: center;;
+}
+
+.error_form{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 25%;
+  padding: 8px;
+  top: 15%;
+  left: 38%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* Add Animation */
@@ -399,9 +483,14 @@ footer{
   to {top:0; opacity:1}
 }
 
-@keyframes animatetop {
+@keyframes show_mmodal {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
+}
+
+@keyframes hide_modal{
+  from{top: 0px; opacity: 1;}
+  to{top: -300; opacity: 0;}
 }
 
 /* The Close Button */
@@ -419,16 +508,5 @@ footer{
   cursor: pointer;
 }
 
-.modal-header {
-  padding: 16px;
-  background-color: #5cb85c;
-  color: white;
-}
 
-.modal-body {padding: 16px;}
 
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
