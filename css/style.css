@@ -36,6 +36,13 @@
   border-radius: 0.35rem;
 }
 
+@media screen and (max-width: 420px){
+  .card-login {
+    margin-left: 10px ;
+    margin-right:10px;
+  }
+}
+
 .card-small{
   position: relative;
   margin-left: 10px;
@@ -52,10 +59,17 @@
   border-top: 0 
 }
 
+.card-body-small a{
+  color : #666; 
+  font-size: 16px; 
+  text-decoration: none; 
+  font-weight: bold
+
+}
 .row {
   display: flex;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  /*margin-right: 20px;*/
+  margin-left: 3px;
 }
 
 .col-lg-7{
@@ -71,8 +85,8 @@
 }
 
 .form-control {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
   height: 35px;
   padding: 5px;
@@ -87,14 +101,16 @@
 }
 
 .form-group {
+  position: relative;
+  width: 100%;
   margin-bottom: 1rem;
   margin-top: 10px;
-  margin-left: 30px;
+  /*margin-left: 30px;*/
 }
 
 .font{
   font-family: arial;
-  text-align: center;
+  text-align: left;
 }
 
 .gender{
@@ -109,92 +125,125 @@
   color: #fff;
   background-color: #4e73df;
   border-color: #4e73df;
-  width: 60px;
-  height: 25px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-blue2 {
+  color: #fff;
+  background-color: #4e73df;
+  border-radius: 5px;
+  padding: 5px;
+  float: right;
+}
+
+.width-65 {
+  width: 65px;
+}
+
+.height-30{
+  height: 30px;
+}
+
+.height-100{
+  height: 100px;
 }
 
 .btn-orange {
   color: #fff;
   background-color: #f6c23e;
   border-color: #f6c23e;
-  width: 60px;
-  height: 25px;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.margin-left {
+  margin-left: 60%;
+}
+
+.width-150{
+  width: 150px;
+}
+
+.height-50{
+  height: 50px;
+}
+
+.width-100{
+  width: 100px;
+}
+
 .btn-green {
   color: #fff;
   background-color: #02B49A;
   border-color: #02B49A;
-  width: 100px;
-  height: 50px;
-  margin-left: 160px;
+  /*margin-left: 160px;*/
+  border-radius: 10px;
+  padding: 10px;
 } 
 
+.margin-left-10{
+  margin-left: 10%;
+}
+
+.margin-left-13{
+  margin-left: 13%;
+}
+
+.margin-left-20{
+  margin-left: 20%;
+}
 .btn-green-login {
   color: #fff;
   background-color: #02B49A;
   border-color: #02B49A;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  padding: 10px;
   border-radius: 10rem;
-  margin-left: 115px; 
+  margin-left: 25%; 
 } 
 
 .login{
   position: center;
-  margin-top: 100px;
+  padding: 75px;
+  margin-top: 50px;
 }
 
 .sidenav {
-  height: 100%;
-  width: 230px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
   background-color: #02B49A;
-  overflow-x: hidden;
-  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
   display: block;
-  transition: 0.3s;
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 .main {
-  margin-left: 250px;
+  margin-left: 230px;
   color : #5a5c69;
   font-family : sans-serif;
-}
-
-.tabel{
-  width: 100%;
-  border: 1px solid #dddfeb;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-
-.tabel-profil{
-  width: 40%;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.tabel th{
-  border: 1px solid #dddfeb;
-  text-align: center;
-} 
-
-.tabel td{
-  border: 1px solid #dddfeb;
-}
-
-th {
-  text-align: right;
 }
 
 .dropdown .dropbtn {
@@ -214,6 +263,7 @@ th {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-left: 20px;
 }
 
 .dropdown-content a {
@@ -223,6 +273,7 @@ th {
   text-decoration: none;
   display: block;
   text-align: left;
+
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -235,14 +286,244 @@ th {
   display: block;
 }
 
-footer{
-  margin-top: 10px;
-  margin-left: 100px;
-  width: 100%;
-  text-align: center;
-  color: #5a5c69;
-  background-color: #fff;
-  padding: 2rem 0;
-  line-height: 1;
-  font-size: 0.8rem;
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main {
+    margin-left: 10px;
+    float: left;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+  .dropdown{
+    float: left;
+  }
+  .btn-orange {
+    margin-left: 50px;
+  }
+  .btn-blue{
+    height: 50px;
+  }
 }
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: left;
+    float: none;
+  }
+  .main {
+    margin-left: 10px;
+    float: none;
+  }
+  .dropdown{
+    float: none;
+  }
+  .btn-orange {
+    margin-left: 20px;
+    width: 175px; 
+  }
+  .btn-blue{
+    height: 50px;
+  }
+}
+
+
+.tabel{
+  width: 100%;
+  border: 1px solid #dddfeb;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.tabel-profil{
+  width: 100%;
+  padding-left: 10px;
+  text-align: left;
+
+}
+
+.tabel-profil td{
+  padding: 5px;
+}
+
+.tabel th{
+  border: 1px solid #dddfeb;
+  text-align: center;
+  padding: 10px;
+
+} 
+
+.tabel td{
+  border: 1px solid #dddfeb;
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+body{
+  margin: 0;
+}
+
+h2{
+  padding: : 3;
+  margin: 0;
+}
+
+.size-25 {
+  width: 25%;
+}
+
+.size-32 {
+  width: 32%;
+}
+
+.size-50 {
+  widows: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: show_modal;
+  animation-duration: 0.4s
+}
+
+.modal-header {
+  padding: 8px;
+  background-color: #02B49A;
+  color: white;
+}
+
+.modal-body {padding: 16px;}
+
+.modal-footer{
+  padding: 5px;
+  overflow: hidden;
+  background-color: rgb(240,240,240);
+}
+
+.error-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 43%;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.5);
+  animation-name: show_modal;
+  -webkit-animation-name: animatetop;
+}
+
+.error-modal .modal-header{
+  background-color: red;
+}
+
+.error-modal .modal-body{
+  text-align: center;;
+}
+
+.error_form{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 25%;
+  padding: 8px;
+  top: 15%;
+  left: 38%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes show_mmodal {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes hide_modal{
+  from{top: 0px; opacity: 1;}
+  to{top: -300; opacity: 0;}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.figura{
+    height: 150px;
+    width: 150px;
+    margin-right: 5px;
+  }
+
+.figura img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.uploadIcon{
+  display: inline-block;
+  padding: 3px 5px;
+  cursor: pointer; 
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.uploadIcon:hover{
+  background-color: lightgrey;
+  color: black;
+}
+
+

@@ -3,68 +3,147 @@
 
 <head>
 	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Profil</title>
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Profil</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <style type="text/css">
+
+ </style>
 </head>
 
 <body class="bg-gray">
-	<div id="mySidenav" class="sidenav font">
-    <a href="dashboard_siswa.html">E-LEARNING</a>
-    <hr>
-    <a href="dashboard_siswa.html">Dashboard</a>
-    <a href="jadwal_siswa.html">Jadwal</a>
+	<div class="sidenav font">
+    <a><i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_guru.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_guru.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Mata Pelajaran</a>
+        <a><i class="fas fa-stream"></i>
+          Kelola Materi
+        </a>
       </button>
       <div class="dropdown-content">
-        <a href="bi.html">Bahasa Indonesia</a>
-        <a href="bing.html">Bahasa Inggris</a>
-        <a href="bio.html">Biologi</a>
-        <a href="fisika.html">Fisika</a>
-        <a href="kimia.html">Kimia</a>
-        <a href="mtk.html">Matematika</a>
+        <a href="tambah_materi.html">Tambah Materi</a>
+        <a href="lihat_materi.html">Lihat Materi</a>
       </div>
     </div>
-    <a href="tugas_siswa.html">Tugas</a>
-    
-    <hr>
-    <a href="profil_siswa.html">Profil</a>
-    <a href="index.html">Logout</a>
-  </div>
-  <div class= "main ">
-  <h2>Profil Mu</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Profil Guru</h3>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a><i class="fas fa-th-list"></i>
+          Kelola Tugas
+        </a>
+      </button>
+      <div class="dropdown-content">
+        <a href="tambah_tugas.html">Tambah Tugas</a>
+        <a href="lihat_tugas.html">Lihat Tugas</a>
       </div>
-      <table class="tabel-profil">
-        <tr>
-          <th>Nama</th>
-          <td>: Bayu Putra</td>  
-        </tr>
-         <tr>
-          <th>NIP</th>
-          <td>: 19xxxxxxxxxxxx</td>  
-        </tr>
-        <tr>
-          <th>Mengajar Bidang</th>
-          <td>: Kimia</td>  
-        </tr>
-         <tr>
-          <th>Tempat, tanggal lahir</th>
-          <td>: Banyuwangi, 18 Desember 1988</td>  
-        </tr>
-         <tr>
-          <th>Jenis Kelamin</th>
-          <td>: Laki-Laki</td>  
-        </tr>
-        
-      </table>
     </div>
+    <a href="profil_guru.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
   </div>
   
-   <br>
+  <div class= "main ">
+    <br>
+    <h2>Profil Mu</h2>
+    <br>
+    <div style=" max-width: 60%; margin-left: 15%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Profil Guru</h3>
+          </div>
+          <div class="row">
+            <div class="figura">
+              <img id="user" src="img/login2.png">
+            </div>
+            <table class="tabel-profil">
+              <tr>
+                <th>Nama</th>
+                <td>: Bayu Putra</td>  
+              </tr>
+              <tr>
+                <th>NIP</th>
+                <td>: 19xxxxxxxxxxxx</td>  
+              </tr>
+              <tr>
+                <th>Mengajar Bidang</th>
+                <td>: Kimia</td>  
+              </tr>
+              <tr>
+                <th>Tempat, tanggal lahir</th>
+                <td>: Banyuwangi, 18 Desember 1988</td>  
+              </tr>
+              <tr>
+                <th>Jenis Kelamin</th>
+                <td>: Laki-Laki</td>  
+              </tr>
+            </table>
+          </div>
+          <div>
+            <button class="btn-orange" id="btn_ubah" style= "margin-top: 1%; margin-right: 1%;"><i class="fas fa-edit"></i> Ubah Foto Profil</button>  
+          </div>
+        </div>
+        <div id="modal2" class="modal">
+          <div class="modal-content" style="max-width: 40%; ">
+            <div class="modal-header">
+              <h2>Ubah Foto Profil</h2>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="figura"><img id="user_img" src="img/login2.png"></div>
+                <div id="upload_btn" style="padding: 10px;">
+                  <input type="file" name="img2" id="btn_file" value="Choose File" accept="image/*" class="form-control" style="max-width: 80%;">
+                  <div id="file_info" style="padding: 10px;">
+
+
+                  </div>                   
+                </div>
+              </div>
+              <br>
+              <button type="button" id="btn_simpan" class="btn-green" style="margin-left: 40%;">Simpan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <br>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  $("#btn_ubah").click(function(event) {
+    modalShow2();
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('modal2');
+      if(event.target == modal){
+        modalHide2();
+      }
+    };
+
+  });
+  $("#btn_file").uploadGambar();
+  $("#btn_simpan").updateGambar();
+  $("#btn_simpan").click(function(event) {
+    modalHide2();
+  });
+ 
+</script>
 </body>
 </html>
