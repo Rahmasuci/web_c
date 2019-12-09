@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+	<title>E-Learning - Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+	<div class="sidenav font">
+    <a>E-LEARNING</a>
+    <a href="dashboard_guru.html">Dashboard</a>
+    <a href="jadwal_guru.html">Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a>Kelola Materi</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="tambah_materi.html">Tambah Materi</a>
+        <a href="lihat_materi.html">Lihat Materi</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a>Kelola Tugas</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="tambah_tugas.html">Tambah Tugas</a>
+        <a href="lihat_tugas.html">Lihat Tugas</a>
+      </div>
+    </div>
+    <a href="profil_guru.html">Profil</a>
+    <a href="index.html">Logout</a>
+  </div>
+
+  <div class= "main ">
+    <h2>Detail Tugas</h2>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Detail Tugas yang diberikan</h3>
+        </div>
+        <div>
+          <p>Mata Pelajaran : Kimia</p>
+          <p>Kelas : 10A</p>
+          <p>Deskripsi : Mengerjakan Latihan Soal di Buku halaman 11</p>
+          <p>Deadline : 11/09/2019</p>
+        </div>
+        <table class="tabel">
+          <tr>
+            <th>Kelas</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Tanggal Kumpulkan</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>10A</td>
+            <td>16000</td>
+            <td>Mustika Rahmasuci</td>
+            <td>11/09/2019</td>
+            <td><button class="btn-blue" onclick="window.location.href = 'detail_tugas.html'">Lihat</button>
+                <button class="btn-orange">Unduh</button>
+            </td>
+          </a>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

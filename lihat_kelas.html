@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-Learning - Kelola Kelas</title>
+</head>
+
+<body class="bg-gray">
+  <div id="mySidenav" class="sidenav font">
+    <a href="dashboard_admin.html"><i class="fas fa-book-reader"></i> E-LEARNING</a>
+    <a href="dashboard_admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="lihat_pelajaran.html"><i class="fas fa-clipboard-list"></i> Lihat Pelajaran</a>
+    <a href="lihat_kelas.html"><i class="fas fa-school"></i> Lihat Kelas</a>
+    <a href="lihat_jadwal.html"> <i class="fas fa-calendar-day"></i> Lihat Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn"><a><i class="fas fa-user-cog"></i> Kelola Akun</a></button>
+      <div class="dropdown-content">
+        <a href="tambah_akun.html">Tambah Akun</a>
+        <a href="lihat_akun.html">Lihat Akun</a>
+      </div>  
+    </div> 
+    <a href="profil_admin.html"><i class="fas fa-user-circle"></i> Profil</a>
+    <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+  </div>
+
+  <div class= "main ">
+    <br>
+    <h2>Lihat Kelas</h2>
+    <br>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Daftar Kelas</h3>
+            <button class="btn-orange margin-left" id="btn_tambah"><i class="fas fa-plus"></i> Tambah Kelas</button>
+          </div>
+          <div>
+            <input id="myInput" type="text" placeholder="Search..">
+          </div>
+          <br>
+
+          <table class="tabel">
+            <tr>
+              <th>No</th>
+              <th>Kelas</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+            <tbody id = "myTable">
+              <tr>
+                <td>1</td>
+                <td id="10a">10A</td>
+                <td id="status">Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>10B</td>
+                <td>Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>11A</td>
+                <td>Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>11B</td>
+                <td>Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+                </tr>
+              <tr>
+                <td>5</td>
+                <td>12A</td>
+                <td>Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>12B</td>
+                <td>Aktif</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content" style="width: 25%;">
+              <div class="modal-header">
+                <span class="close" id="x1">&times;</span>
+                <h2>Ubah Kelas</h2></div>
+                <div class="modal-body">
+                  <form class="user">
+                    <table>
+                      <tr>
+                        <th>Kelas : </th>
+                        <th><div class="form-group"><input type="text" class="form-control" name="kelas" id="InputKelas" value="10A"></div></th>
+                      </tr>
+                      <tr>
+                        <th>Status : </th>
+                        <th><div class="form-group row font">
+                          <div class="gender">
+                            <input type="radio" name="status" value="Aktif" checked><label class="radio">Aktif</label>
+                            <input type="radio" name="status" value="Non Aktif" ><label class="radio" >Tidak Aktif</label>
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </table>
+                  <button type="button" id="modal_close" class="btn-green" style="margin-left: 40%;">Simpan</button>
+                </form>
+              </div>            
+            </div>
+          </div>
+
+          <div id="id_modal" class="modal">
+            <div class="modal-content" style="width: 25%;">
+              <div class="modal-header">
+                <span class="close" id="x2">&times;</span>
+                <h2>Tambah Kelas</h2></div>
+                <div class="modal-body">
+                  <form class="user">
+                    <table>
+                      <tr>
+                        <th>Kelas : </th>
+                        <th><div class="form-group"><input type="text" class="form-control" id="kelas"></div></th>
+                      </tr>
+                      <tr>
+                        <th>Status : </th>
+                        <th><div class="form-group row font">
+                          <div class="gender">
+                            <input type="radio" name="status2" value="Aktif" checked><label class="radio">Aktif</label>
+                            <input type="radio" name="status2" value="Non Aktif" ><label class="radio" >Tidak Aktif</label></div></div>
+                          </th>
+                        </tr>
+                      </table>
+                      <button type="submit" class="btn-green" style="margin-left: 40%"> Simpan</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="error-modal" id="error_modal">
+              <div class="modal-header">
+                <h2>Kesalahan</h2>
+              </div>
+              <div class="modal-body">
+                <b></b>
+              </div>  
+              <button class="btn-blue2" id="close_error_form">OK</button>
+          </div> 
+
+          <script src="js/jquery-3.4.1.min.js"></script>
+          <script src="js/main_script.js"></script>
+          <script type="text/javascript">
+            cariTabel();
+            $("#btn_tambah").click(function(event) {
+              modalShow1();
+
+              $(".close").click(function(event) {
+                modalHide1();
+              });
+
+              window.onclick = function(event) {
+                var modal = document.getElementById('id_modal');
+                if(event.target == modal){
+                  modalHide1();
+                }
+              };
+            });
+
+            $("#btn_ubah").click(function(event) {
+              modalShow2();
+
+              $(".close").click(function(event) {
+                modalHide2();
+              });
+
+              window.onclick = function(event) {
+                var modal = document.getElementById('modal2');
+                if(event.target == modal){
+                  modalHide2();
+                }
+              };
+
+            });
+            $("#modal_close ").updateKelas();
+          </script>
+
+        </body>
+        </html>
