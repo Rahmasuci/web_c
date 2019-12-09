@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-	<link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="./css/all.css">
  <title>E-Learning - Profil</title>
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <style type="text/css">
+
+ </style>
 </head>
 
 <body class="bg-gray">
-	<div class="sidenav font">
+  <div class="sidenav font">
     <a><i class="fas fa-book-reader"></i>
       E-LEARNING
     </a>
@@ -57,40 +60,90 @@
     <br>
     <h2>Profil Mu</h2>
     <br>
-    <div style=" max-width: 50%; margin-left: 25%">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <h3>Profil Guru</h3>
+    <div style=" max-width: 60%; margin-left: 15%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Profil Guru</h3>
+          </div>
+          <div class="row">
+            <div class="figura">
+              <img id="user" src="img/login2.png">
+            </div>
+            <table class="tabel-profil">
+              <tr>
+                <th>Nama</th>
+                <td>: Bayu Putra</td>  
+              </tr>
+              <tr>
+                <th>NIP</th>
+                <td>: 19xxxxxxxxxxxx</td>  
+              </tr>
+              <tr>
+                <th>Mengajar Bidang</th>
+                <td>: Kimia</td>  
+              </tr>
+              <tr>
+                <th>Tempat, tanggal lahir</th>
+                <td>: Banyuwangi, 18 Desember 1988</td>  
+              </tr>
+              <tr>
+                <th>Jenis Kelamin</th>
+                <td>: Laki-Laki</td>  
+              </tr>
+            </table>
+          </div>
+          <div>
+            <button class="btn-orange" id="btn_ubah" style= "margin-top: 1%; margin-right: 1%;"><i class="fas fa-edit"></i> Ubah Foto Profil</button>  
+          </div>
         </div>
-        <table class="tabel-profil">
-          <tr>
-            <th>Nama</th>
-            <td>: Bayu Putra</td>  
-          </tr>
-          <tr>
-            <th>NIP</th>
-            <td>: 19xxxxxxxxxxxx</td>  
-          </tr>
-          <tr>
-            <th>Mengajar Bidang</th>
-            <td>: Kimia</td>  
-          </tr>
-          <tr>
-            <th>Tempat, tanggal lahir</th>
-            <td>: Banyuwangi, 18 Desember 1988</td>  
-          </tr>
-          <tr>
-            <th>Jenis Kelamin</th>
-            <td>: Laki-Laki</td>  
-          </tr>
+        <div id="modal2" class="modal">
+          <div class="modal-content" style="max-width: 40%; ">
+            <div class="modal-header">
+              <h2>Ubah Foto Profil</h2>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="figura"><img id="user_img" src="img/login2.png"></div>
+                <div id="upload_btn" style="padding: 10px;">
+                  <input type="file" name="img2" id="btn_file" value="Choose File" accept="image/*" class="form-control" style="max-width: 80%;">
+                  <div id="file_info" style="padding: 10px;">
 
-        </table>
+
+                  </div>                   
+                </div>
+              </div>
+              <br>
+              <button type="button" id="btn_simpan" class="btn-green" style="margin-left: 40%;">Simpan</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-
-    <br>
   </div>
+  <br>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  $("#btn_ubah").click(function(event) {
+    modalShow2();
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('modal2');
+      if(event.target == modal){
+        modalHide2();
+      }
+    };
+
+  });
+  $("#btn_file").uploadGambar();
+  $("#btn_simpan").updateGambar();
+  $("#btn_simpan").click(function(event) {
+    modalHide2();
+  });
+ 
+</script>
 </body>
 </html>

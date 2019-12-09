@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.css">
   <title>E-Learning - Mata Pelajaran</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -66,53 +66,58 @@
         </div>
       </div> 
       <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-1</h3>
-            <hr>
-            <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
-            <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+      <div id = "list_minggu" page="">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-1</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
+              <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div>  
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-2</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>
+              <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+            </div>
           </div>
         </div>
-      </div>  
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-2</h3>
-            <hr>
-            <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
-            <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-3</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>  
+              <button class="btn-blue" id="btn_tugas"><i class="fas fa-plus"></i>Tambah Tugas</td></button>
+            </div>
           </div>
-        </div>
+        </div> 
+        <br> 
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-4</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>  
+              <button class="btn-blue" id="btn_tugas"><i class="fas fa-plus"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div> 
+        <br>
       </div>
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-3</h3>
-            <hr>
-            <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>  
-            <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
-          </div>
-        </div>
-      </div> 
-      <br> 
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-4</h3>
-            <hr>
-            <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>  
-            <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
-          </div>
-        </div>
-      </div> 
-      <br> 
-    </div>    
-
-
+      <div>
+        <button class="btn-green" id="load_btn" style="margin-left: 40%;"><i class="fas fa-plus"></i> Tambah 4 minggu</button>
+      </div>  
+      <br>  
+    </div>   
+    
     <div id="modal2" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -127,52 +132,95 @@
               </tr>
               <tr>
                 <th>Deadline : </th>
-                <th><div class="form-group">
-                  <input type="date" class="form-control" id="InputDeadline">
-                </div>
-              </th>
-            </tr>
-          </table>
-          <button type="button" class="btn-green margin-left-13">Simpan</button>
-        </form>
-      </div>            
+                <th><div class="form-group"><input type="date" class="form-control" id="InputDeadline"></div></th>
+              </tr>
+            </table>
+            <button type="button" class="btn-green margin-left-13">Simpan</button>
+          </form>
+        </div>            
+      </div>
     </div>
-  </div>
 
-  <div id="id_modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2>Tambahkan Materi</h2></div>
-        <div class="modal-body">
-         <form class="user" id = "materi">
-          <table>
-            <tr>
-              <th>Deskripsi : </th>
-              <th><div class="form-group">
-                <textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea>
-              </div>
-            </th>          
-          </tr>
-          <tr>
-            <th></th>
-            <th><div class="form-group">
-              <input type="file" class="form-control" ></th>
-            </div>
-          </tr>
-        </table>
-        <button type="button" class="btn-green margin-left-13">Simpan</button>
-      </form>
+    <div id="id_modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Tambahkan Materi</h2></div>
+          <div class="modal-body">
+            <form class="user" id = "materi">
+              <table>
+                <tr>
+                  <th>Deskripsi : </th>
+                  <th><div class="form-group"><textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea> </div></th>          
+                </tr>
+                <tr>
+                  <th></th>
+                  <th><div class="form-group"><input type="file" class="form-control" ></div></th>
+                </tr>
+              </table>
+              <button type="button" class="btn-green margin-left-13">Simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
-</div>
-</div>
+
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main_script.js"></script>
 <script type="text/javascript">
-  cariTabel();
+  $("#load_btn").click(function(event) {
+    var hal = $("#list_minggu").attr('page');
+    hal = Number(hal);
+    if (hal == "") {
+      hal = 2;
+    }
+    else{
+      hal += 1;
+    }
+
+    $("#list_minggu").attr('page', hal);
+    if (hal == 4) {
+      $("#load_btn").hide();
+    }
+
+    var path = "json/materi_guru_"+hal+".json";
+
+    $.ajax({
+      url: path,
+      type: 'GET',
+      dataType: 'json',
+        // data: { }
+      })
+    .done(function(hasil) {
+      console.log("success");
+      var gabung = "";
+      $.each(hasil, function(index, val) {
+       gabung += `
+       <div class="card">
+       <div class="card-body">
+       <div>
+       <h3>`+val.minggu+`</h3>
+       <hr>
+       <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
+       <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+       </div>
+       </div>
+       </div>  
+       <br>
+       `;
+     });
+
+      $("#list_minggu").append(gabung);
+    })
+    .fail(function() {
+      console.log("error");
+    });
+
+  });
+
   $("#btn_materi").click(function(event) {
     modalShow1();
 
@@ -203,7 +251,6 @@
     };
 
   });
-
   // $("#modal_close ").updateKelas();
 </script>
 </body>
