@@ -1,71 +1,58 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+   img {
+     max-width: 100%;
+     height: auto;  
+   }   
+ </style>
+ <title>E-Learning - Login</title>
 </head>
 
 <body class="bg-green">
-	<div class="container"></div>
-	<div class="card-login">
-		<div class="card-body-login">
-      <div class="row">
-        <div>
-          <img src="./img/login.jpg">
+	<div class="container">
+    <div class="card-login font">
+      <div class="card-body-login">
+        <div class="row">
+          <div >
+            <img src="./img/login.jpg" width="460" height="345">
+          </div>
+          <div class="col-lg-7, login" style="padding: 20px">
+            <h2 style="margin-left: 35%;">LOGIN</h2>
+            <form class="control" action="dashboard_siswa.html">
+              <div class="form-group">
+                <input type="number" class="form-control" id="InputID" placeholder="NIS/NIP" name="nis">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="InputPassword" placeholder="Password" name="password">
+              </div>
+              <button type="submit" class="btn-green-login">MASUK</button>
+            </form>
+          </div>
         </div>
-        <div class="col-lg-7, login">
-          <h2 class="font" style="margin-left: 40px;">LOGIN</h2>
-				<form class="control" action="dashboard_siswa.html">
-					<div class="form-group">
-            <input type="number" class="form-control" id="InputID" placeholder="NIS/NIP">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control" id="InputPassword" placeholder="Password">
-          </div>
-          <button type="submit" class="btn-green-login">MASUK</button>
-   		</form>
-   		
-		</div>
+      </div>
+       <div class="error-modal" id="error_modal" style="left: 39%;">
+        <div class="modal-header">
+          <h2>Kesalahan</h2>
+        </div>
+        <div class="modal-body">
+          <b></b>
+        </div>  
+        <button class="btn-blue2" id="close_error_form">OK</button>
+      </div> 
+    </div>
   </div>
-	</div>
-</div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main_script.js"></script>
+  <script type="text/javascript">
+    $("form").validasiLogin();
+  </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Login</title>
-</head>
-
-<body class="bg-green">
-	<div class="container"></div>
-	<div class="card-login">
-		<div class="card-body-login">
-      <div class="row">
-        <div>
-          <img src="./img/login.jpg">
-        </div>
-        <div class="col-lg-7, login">
-          <h2 class="font" style="margin-left: 40px;">LOGIN</h2>
-				<form class="control" action="dashboard_siswa.html">
-					<div class="form-group">
-            <input type="number" class="form-control" id="InputID" placeholder="NIS/NIP">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control" id="InputPassword" placeholder="Password">
-          </div>
-          <button type="submit" class="btn-green-login">MASUK</button>
-   		</form>
-   		
-		</div>
-  </div>
-	</div>
-</div>
-</body>
-</html>
->>>>>>> fade00ce95cfde9bf0af628cebea0785a1887c5f

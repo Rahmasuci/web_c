@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Kelola Jadwal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+  <div id="mySidenav" class="sidenav font">
+    <a href="dashboard_admin.html"><i class="fas fa-book-reader"></i> E-LEARNING</a>
+    <a href="dashboard_admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="lihat_pelajaran.html"><i class="fas fa-clipboard-list"></i> Lihat Pelajaran</a>
+    <a href="lihat_kelas.html"><i class="fas fa-school"></i> Lihat Kelas</a>
+    <a href="lihat_jadwal.html"> <i class="fas fa-calendar-day"></i> Lihat Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn"><a><i class="fas fa-user-cog"></i> Kelola Akun</a></button>
+      <div class="dropdown-content">
+        <a href="tambah_akun.html">Tambah Akun</a>
+        <a href="lihat_akun.html">Lihat Akun</a>
+      </div>  
+    </div> 
+    <a href="profil_admin.html"><i class="fas fa-user-circle"></i> Profil</a>
+    <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+  </div>
+
+
+  <div class= "main ">
+    <br>
+    <h2>Lihat Jadwal</h2>
+    <br>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Daftar Jadwal </h3>
+            <button class="btn-orange margin-left" id="btn_tambah"><i class="fas fa-plus"></i> Tambah Jadwal </button>
+          </div>
+          <div>
+            <input id="myInput" type="text" placeholder="Search..">
+          </div>
+          <br>
+          <table class="tabel">
+            <tr>
+              <th>No</th>
+              <th>Kelas</th>
+              <th>Hari</th>
+              <th>Mata Pelajaran</th>
+              <th>Guru</th>
+              <th>Jam</th> 
+              <th>Aksi</th>
+            </tr>
+            <tbody id="myTable">
+              <tr>
+                <td>1</td>
+                <td id="10a">10A</td>
+                <td id="senin">Senin</td>
+                <td id="mtk">Matematika</td>
+                <td id="indro">Pak Indro</td>
+                <td id="waktu">08.00 - 09.30</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>10A</td>
+                <td>Senin</td>
+                <td>Bahasa Indonesia</td>
+                <td>Bu Susi</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>10A</td>
+                <td>Senin</td>
+                <td>Istirahat</td>
+                <td>-</td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>10A</td>
+                <td>Senin</td>
+                <td>Fisika</td>
+                <td>Pak Tris</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>10A</td>
+                <td>Selasa</td>
+                <td>Kimia</td>
+                <td>Pak Bayu</td>
+                <td>08.00 - 09.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>10A</td>
+                <td>Selasa</td>
+                <td>Bahasa Inggris</td>
+                <td>Mr. David</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>10A</td>
+                <td>Selasa</td>
+                <td>Istirahat</td>
+                <td>- </td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>10A</td>
+                <td>Selasa</td>
+                <td>Biologi</td>
+                <td>Bu Bunga</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10A</td>
+                <td>Rabu</td>
+                <td>Matematika</td>
+                <td>Pak Indro</td>
+                <td>08.00 - 09.30</td>
+                <td><button class="btn-blue  id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>10A</td>
+                <td>Rabu</td>
+                <td>Bahasa Indonesia</td>
+                <td>Bu Susi</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue widht-65 height-30" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>10A</td>
+                <td>Rabu</td>
+                <td>Istirahat</td>
+                <td>- </td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue " id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>10A</td>
+                <td>Rabu</td> 
+                <td>Fisika</td>
+                <td>Pak Tris</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue " id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Kimia</td>
+                <td>Pak Bayu</td>
+                <td>08.00 - 09.00</td>
+                <td><button class="btn-blue " id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Bahasa Inggris</td>
+                <td>Mr. David</td>
+                <td>09.30 - 11.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Istirahat</td>
+                <td>- </td>
+                <td>11.00 - 12.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>10A</td>
+                <td>Kamis</td>
+                <td>Biologi</td>
+                <td>Bu Bunga</td>
+                <td>12.00 - 13.30</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>            
+                <td>17</td>
+                <td>10A</td>
+                <td>Jumat</td>
+                <td>Matematika</td>
+                <td>Pak Indro</td>
+                <td>07.30 - 09.00</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>10A</td>
+                <td>Jumat</td>
+                <td>Bahasa Indonesia</td>
+                <td>Bu Susi</td >
+                <td>09.00 - 10.30</td>
+                <td><button class="btn-blue" id="btn_ubah"><i class="far fa-edit"></i>Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><br>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content" style="width: 35%">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Ubah Jadwal</h2>
+        </div>
+        <div class="modal-body">
+          <form class="user">
+            <table>
+              <tr>
+                <th>Kelas </th>
+                <th><div class="form-group">
+                  <select name="kelas" class="form-control" id="pilih-kelas" style="width: 310px; height: 45px">
+                    <option value="10A">10A</option>
+                    <option value="10B">10B</option>
+                    <option value="11A">11A</option>
+                    <option value="11B">11B</option>
+                    <option value="12A">12A</option>
+                    <option value="12B">12B</option>
+                  </select></div>
+                </th>
+              </tr>
+              <tr>
+                <th>Hari </th>
+                <th><div class="form-group">
+                  <select name="hari" class="form-control" id="pilih-hari" style="width: 310px; height: 45px">
+                    <option value="Senin">Senin</option>
+                    <option value="Selasa">Selasa</option>
+                    <option value="Rabu">Rabu</option>
+                    <option value="Kamis">Kamis</option>
+                    <option value="Jumat">Jumat</option>
+                  </select></div>
+                </th>
+              </tr>
+              <tr>
+                <th>Mata Pelajaran </th>
+                <th><div class="form-group">
+                  <select name="pelajaran" class="form-control" id="pilih-pelajaran" style="width: 310px; height: 45px">
+                    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                    <option value="Bahasa Inggris">Bahasa Inggris</option>
+                    <option value="Biologi">Biologi</option>
+                    <option value="Fisika">Fisika</option>
+                    <option value="Kimia">Kimia</option>
+                    <option value="Matematika">Matematika</option>
+                  </select></div>
+                </th>
+              </tr>
+              <tr>
+                <th>Guru </th>
+                <th><div class="form-group">
+                  <input type="text" class="form-control" name="guru" id="InputID" value="Pak Indro"style="width: 300px;"></div>
+                </th>
+              </tr>
+              <tr>
+                <th>Jam </th>
+                <th><div class="form-group">
+                  <select name="jam" class="form-control" id="pilih-jam" style="width: 310px; height: 45px">
+                    <option value="08.00 - 09.30">08.00 - 09.30</option>
+                    <option value="09.30 - 11.00">09.30 - 11.00</option>
+                    <option value="11.00 - 12.00">11.00 - 12.00</option>
+                    <option value="12.00 - 13.30">12.00 - 13.30</option>
+                  </select></div>
+                </th>
+              </tr>
+            </table>
+            <button type="button" id="modal_close" class="btn-green" style="margin-left: 40%">Simpan</button>
+          </form>
+        </div>            
+      </div>
+    </div>
+
+    <div class="error-modal" id="error_modal">
+      <div class="modal-header">
+        <h2>Kesalahan</h2>
+      </div>
+      <div class="modal-body">
+        <b></b>
+      </div>  
+      <button class="btn-blue2" id="close_error_form">OK</button>
+    </div> 
+
+    <div id="id_modal" class="modal">
+      <div class="modal-content" style="width: 35%;">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Tambah Kelas</h2>
+        </div>
+        <div class="modal-body">
+         <form class="user">
+          <table>
+            <tr>
+              <th>Kelas </th>
+              <th><div class="form-group">
+                <select name="kelas" class="form-control" id="pilih-kelas" style="width: 310px; height: 45px">
+                  <option value="1">Pilih Kelas</option>
+                  <option value="2">10A</option>
+                  <option value="3">10B</option>
+                  <option value="4">11A</option>
+                  <option value="5">11B</option>
+                  <option value="6">12A</option>
+                  <option value="7">12B</option>
+                </select></div>
+              </th>
+            </tr>
+            <tr>
+              <th>Hari </th>
+              <th><div class="form-group">
+                <select name="hari" class="form-control" id="pilih-hari" style="width: 310px; height: 45px">
+                  <option value="1">Pilih Hari</option>
+                  <option value="2">Senin</option>
+                  <option value="3">Selasa</option>
+                  <option value="4">Rabu</option>
+                  <option value="5">Kamis</option>
+                  <option value="6">Jumat</option>
+                </select></div>
+              </th>
+            </tr>
+            <tr>
+              <th>Jam </th>
+              <th><div class="form-group">
+                <select name="jam" class="form-control" id="pilih-jam" style="width: 310px; height: 45px">
+                  <option value="1">Pilih Jam</option>
+                  <option value="2">08.00 - 09.30</option>
+                  <option value="3">09.30 - 11.00</option>
+                  <option value="4">11.00 - 12.00</option>
+                  <option value="5">12.00 - 13.30</option>
+                </select></div>
+              </th>
+            </tr>
+            <tr>
+              <th>Mata Pelajaran </th>
+              <th><div class="form-group">
+                <select name="pelajaran" class="form-control" id="pilih-pelajaran" style="width: 310px; height: 45px">
+                  <option value="1">Pilih Mata Pelajaran</option>
+                  <option value="2">Bahasa Inggris</option>
+                  <option value="3">Biologi</option>
+                  <option value="4">Fisika</option>
+                  <option value="5">Kimia</option>
+                  <option value="6">Matematika</option>
+                  <option value="7">Bahasa Indonesia</option>
+                </select> </div>
+              </th>
+            </tr>
+            <tr>
+              <th>Guru </th>
+              <th><div class="form-group">
+                <input type="text" class="form-control" id="InputNama" placeholder="Nama..." style="width: 300px;"</div>
+              </th>
+            </tr>
+          </table>
+          <button type="button" class="btn-green" style="margin-left: 40%">Simpan</button>
+        </form>
+      </div>  
+    </div>
+
+   
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main_script.js"></script>
+    <script type="text/javascript">
+      cariTabel();
+
+      $("#btn_tambah").click(function(event) {
+        modalShow1();
+
+        $(".close").click(function(event) {
+          modalHide1();
+        });
+
+        window.onclick = function(event) {
+          var modal = document.getElementById('id_modal');
+          if(event.target == modal){
+            modalHide1();
+          }
+        };
+      });
+
+      $("#btn_ubah").click(function(event) {
+        modalShow2();
+
+        $(".close").click(function(event) {
+          modalHide2();
+        });
+
+        window.onclick = function(event) {
+          var modal = document.getElementById('modal2');
+          if(event.target == modal){
+            modalHide2();
+          }
+        };
+
+      });
+
+       $("#modal_close ").updateJadwal();
+
+   </script>
+
+ </body>
+ </html>

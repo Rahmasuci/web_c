@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <link href="./css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Tambah Akun</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+ <div id="mySidenav" class="sidenav font">
+  <a href="dashboard_admin.html"><i class="fas fa-book-reader"></i> E-LEARNING</a>
+  <a href="dashboard_admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+  <a href="lihat_pelajaran.html"><i class="fas fa-clipboard-list"></i> Lihat Pelajaran</a>
+  <a href="lihat_kelas.html"><i class="fas fa-school"></i> Lihat Kelas</a>
+  <a href="lihat_jadwal.html"> <i class="fas fa-calendar-day"></i> Lihat Jadwal</a>
+  <div class="dropdown">
+    <button class="dropbtn"><a><i class="fas fa-user-cog"></i> Kelola Akun</a></button>
+    <div class="dropdown-content">
+      <a href="tambah_akun.html">Tambah Akun</a>
+      <a href="lihat_akun.html">Lihat Akun</a>
+    </div>  
+  </div> 
+  <a href="profil_admin.html"><i class="fas fa-user-circle"></i> Profil</a>
+  <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+</div>
+
+<div class= "main ">
+  <br>
+  <h2>Tambah Akun</h2>
+  <br>
+  <div style="max-width: 50%; margin-left: 25%">
+    <div class="card">
+      <div class="card-body">
+        <h3>Daftarkan Akun Baru</h3>
+        <form class="user">
+          <table>
+            <tr>
+              <th>Nama</th>
+              <th><div class="form-group"><input type="text" class="form-control" id="InputName" placeholder="Nama Lengkap"></div></th>
+            </tr>
+            <tr>
+              <th>Tempat Lahir</th>
+              <th><div class="form-group"><input type="text" class="form-control" id="InputTempat" placeholder="Tempat Lahir"></div></th>
+            </tr>
+            <tr>
+              <th>Tanggal Lahir</th>
+              <th><div class="form-group"> <input type="date" class="form-control" id="InputTglLahir"><div></th>
+            </tr>
+            <tr>
+              <th>Jenis Kelamin</th>
+              <th><div class="form-group row font">
+                    <div class="gender" style="margin-left: 10px;">
+                    <input type="radio" name="gender" value="Laki2"><label class="radio">Laki-Laki</label>
+                    <input type="radio" name="gender" value="Perempuan"/><label class="radio">Perempuan</label></div></div></th>
+            </tr>
+            <tr>
+              <th>Jabatan</th>
+              <th><div class="form-group">
+                    <select name="jabatan" class="form-control" id="pilih-jabatan" style="width: 310px; height: 45px">
+                      <option value="1">Jabatan</option>
+                      <option value="2">Siswa</option>
+                      <option value="3">Guru</option>
+                      <option value="4">Admin</option>
+                    </select></div></th>
+            </tr>
+            <tr>
+              <th>NIS / NIP</th>
+              <th><div class="form-group"><input type="number" class="form-control" id="InputID" placeholder="NIS/NIP"></div></th>
+            </tr>
+            <tr>
+              <th>Password</th>
+              <th><div class="form-group"> <input type="password" class="form-control" id="InputPassword" placeholder="Password"></div> </th>
+            </tr>
+          </table>
+          <button type="submit" class="btn-green margin-left-20">Daftar Akun</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</html>

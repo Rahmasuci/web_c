@@ -2,19 +2,31 @@
 <html lang="en">
 
 <head>
-	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Dashboard</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-Learning - Dashboard</title>
 </head>
 
 <body class="bg-gray">
-	<div id="mySidenav" class="sidenav font">
-    <a href="dashboard_siswa.html">E-LEARNING</a>
-    <hr>
-    <a href="dashboard_siswa.html">Dashboard</a>
-    <a href="jadwal_siswa.html">Jadwal</a>
+	<div class="sidenav font">
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_siswa.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a>Mata Pelajaran</a>
+        <a><i class="fas fa-clipboard-list"></i>
+          Mata Pelajaran
+        </a>
       </button>
       <div class="dropdown-content">
         <a href="bi.html">Bahasa Indonesia</a>
@@ -25,122 +37,194 @@
         <a href="mtk.html">Matematika</a>
       </div>
     </div>
-    <a href="tugas_siswa.html">Tugas</a>
-    
-    <hr>
-    <a href="profil_siswa.html">Profil</a>
-    <a href="index.html">Logout</a>
+    <a href="tugas_siswa.html">
+      <i class="fas fa-list"></i>
+      Tugas
+    </a>
+    <a href="profil_siswa.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
   </div>
 
-<div class= "main ">
-  <h2>Dashboard Siswa</h2>
-  <div class="row">
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Bahasa Indonesia</h3>
-        <a href="bi.html">Lihat</a>
+  <div class= "main ">
+    <br>
+    <h2>Dashboard Siswa</h2>
+    <div class="row">
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Bahasa Indonesia <i class="fas fa-book-open"></i></h3>
+            <a href="bi.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Bahasa Inggris <i class="fas fa-book-open"></i></h3>
+            <a href="bing.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32"> 
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Biologi  <i class="fas fa-book-medical"></i></h3>
+            <a href="bio.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>   
+    </div>
+    <div class="row">
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Matematika <i class="fa fa-calculator" ></i></h3>
+            <a href="mtk.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Fisika <i class="fas fa-bong"></i></h3>
+            <a href="fisika.html">Lihat  <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div> 
+      </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kimia <i class="fas fa-atom"></i></h3>
+            <a href="kimia.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>   
       </div>
     </div>
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Bahasa Inggris</h3>
-        <a href="bing.html">Lihat</a>
-      </div>
-    </div> 
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Biologi</h3>
-        <a href="bio.html">Lihat</a>
-      </div>
-    </div>   
-  </div>
-  <div class="row">
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Matematika</h3>
-        <a href="mtk.html">Lihat</a>
-      </div>
-    </div>
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Fisika</h3>
-        <a href="fisika.html">Lihat</a>
-      </div>
-    </div> 
-    <div class="card-small">
-      <div class="card-body-small">
-        <h3>Kimia</h3>
-        <a href="kimia.html">Lihat</a>
-      </div>
-    </div>   
-  </div>
 
-  <br>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Jadwal Hari ini</h3>
+    <br>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Jadwal Hari ini</h3>
+          </div>
+          <table class="tabel">
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Jam</th>
+            </tr>
+            <tr>
+              <td>Kimia</td>
+              <td>08.00 - 09.00</td>
+            </tr>
+            <tr>
+              <td>Bahasa Inggris</td>
+              <td>09.30 - 11.00</td>
+            </tr>
+            <tr>
+              <td>Istirahat</td>
+              <td>11.00 - 12.00</td>
+            </tr>
+            <tr>
+              <td>Biologi</td>
+              <td>12.00 - 13.30</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <table class="tabel">
-        <tr>
-          <th>Hari</th>
-          <th>Mata Pelajaran</th>
-          <th>Jam</th>
-        </tr>
-        <tr>
-          <td rowspan="4">Selasa</td>
-          <td>Kimia</td>
-          <td>08.00 - 09.00</td>
-        </tr>
-        <tr>
-          <td>Bahasa Inggris</td>
-          <td>09.30 - 11.00</td>
-        </tr>
-        <tr>
-          <td>Istirahat</td>
-          <td>11.00 - 12.00</td>
-        </tr>
-        <tr>
-          <td>Biologi</td>
-          <td>12.00 - 13.30</td>
-        </tr>
-      </table>
     </div>
-  </div>
-  
-   <br>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Tugas Yang Belum Dikerjakan</h3>
+
+    <br>
+    <div style="max-width: 97%; margin-bottom: 30px;">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Tugas Yang Belum Dikerjakan</h3>
+          </div>
+          <div>
+            <input id="myInput" type="text" placeholder="Search..">
+          </div>
+          <br>
+          <table class="tabel">
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Deskripsi</th>
+              <th>Deadline</th>
+              <th>Tanggal Kumpulkan</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+            <tbody id="myTable">
+              <tr>
+                <td>Matematika</td>
+                <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
+                <td>11/09/2019</td>
+                <td></td>
+                <td>Belum dikerjakan</td>
+                <td><button class="btn-orange" id= "btn_tgs" type="button"><i class="fas fa-upload"></i> Submit</button></td>
+              </a>
+            </tr>
+          </tbody>
+        </table>
+
+        <div id="id_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Upload Tugas</h2></div>
+              <div class="modal-body">
+                <form class="user" id = "materi">
+                  <table>
+                    <tr>
+                      <th>Keterangan : </th>
+                      <th><div class="form-group"><textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea> </div></th>          
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <th><div class="form-group"><input type="file" class="form-control" ></div></th>
+                    </tr>
+                  </table>
+                  <button type="button" class="btn-green" style="margin-left: 16%;" id="btn_simpan"  >Simpan</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <table class="tabel">
-        <tr>
-          <th>Mata Pelajaran</th>
-          <th>Deskripsi</th>
-          <th>Deadline</th>
-          <th>Tanggal Kumpulkan</th>
-          <th>Status</th>
-          <th>Aksi</th>
-        </tr>
-        <tr>
-          <td>Matematika</td>
-          <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
-          <td>11/09/2019</td>
-          <td></td>
-          <td>Belum dikerjakan</td>
-          <td><button class="btn-orange">Submit</button></td>
-          </a>
-        </tr>
-      </table>
     </div>
   </div>
 </div>
-<!-- <footer>
-    <div>
-      <span>Copyright &copy; e-learning 2019</span>
-    </div>
-  </footer>  -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  cariTabel();
+  $("#btn_tgs").click(function(event) {
+    modalShow1();
+
+    $(".close").click(function(event) {
+      modalHide1();
+    });
+
+    $("#btn_simpan").click(function(event) {
+      modalHide1();
+    });
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('id_modal');
+      if(event.target == modal){
+        modalHide1();
+      }
+    };
+  });
+</script>
+
 </body>
 </html>
 

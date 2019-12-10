@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Profil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+  <div id="mySidenav" class="sidenav font">
+    <a href="dashboard_admin.html"><i class="fas fa-book-reader"></i> E-LEARNING</a>
+    <a href="dashboard_admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="lihat_pelajaran.html"><i class="fas fa-clipboard-list"></i> Lihat Pelajaran</a>
+    <a href="lihat_kelas.html"><i class="fas fa-school"></i> Lihat Kelas</a>
+    <a href="lihat_jadwal.html"> <i class="fas fa-calendar-day"></i> Lihat Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn"><a><i class="fas fa-user-cog"></i> Kelola Akun</a></button>
+      <div class="dropdown-content">
+        <a href="tambah_akun.html">Tambah Akun</a>
+        <a href="lihat_akun.html">Lihat Akun</a>
+      </div>  
+    </div> 
+    <a href="profil_admin.html"><i class="fas fa-user-circle"></i> Profil</a>
+    <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+  </div>
+  
+  <div class= "main ">
+    <br>
+    <h2>Profil Mu</h2>
+    <br>
+    <div style=" max-width: 60%; margin-left: 15%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Profil Admin</h3>
+          </div>
+          <div class="row">
+            <div class="figura">
+              <img id="user" src="img/login2.png">
+            </div>
+            <table class="tabel-profil">
+              <tr>
+                <th>Nama</th>
+                <td>: Joko</td>  
+              </tr>
+              <tr>
+                <th>NIP</th>
+                <td>: 19xxxxxxxxxx</td>  
+              </tr>
+              <tr>
+                <th>Tempat, tanggal lahir</th>
+                <td>: Surabaya, 4 Juli 1990</td>  
+              </tr>
+              <tr>
+                <th>Jenis Kelamin</th>
+                <td>: Laki-laki</td>  
+              </tr>
+            </table>
+          </div>
+          <div>
+            <button class="btn-orange" id="btn_ubah" style= "margin-top: 1%; margin-right: 1%;"><i class="fas fa-edit"></i> Ubah Foto Profil</button>  
+          </div>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content" style="max-width: 40%; ">
+          <div class="modal-header">
+            <h2>Ubah Foto Profil</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="figura"><img id="user_img" src="img/login2.png"></div>
+              <div id="upload_btn" style="padding: 10px;">
+                <input type="file" name="img2" id="btn_file" value="Choose File" accept="image/*" class="form-control" style="max-width: 80%;">
+                <div id="file_info" style="padding: 10px;">
+
+
+                </div>                   
+              </div>
+            </div>
+            <br>
+            <button type="button" id="btn_simpan" class="btn-green" style="margin-left: 40%;">Simpan</button>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main_script.js"></script>
+  <script type="text/javascript">
+    $("#btn_ubah").click(function(event) {
+      modalShow2();
+
+      window.onclick = function(event) {
+        var modal = document.getElementById('modal2');
+        if(event.target == modal){
+          modalHide2();
+        }
+      };
+
+    });
+    $("#btn_file").uploadGambar();
+    $("#btn_simpan").updateGambar();
+    $("#btn_simpan").click(function(event) {
+      modalHide2();
+    });
+
+  </script>
+</body>
+</html>

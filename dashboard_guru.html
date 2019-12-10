@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="./css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Dashboard Guru</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+	<div class="sidenav font">
+    <a><i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_guru.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_guru.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a><i class="fas fa-school"></i> Kelas yang diajari</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="kimia_guru.html">Kelas 10A</a>
+        <a href="kimia_guru.html">Kelas 10B</a>
+        <a href="kimia_guru.html">Kelas 11A</a>
+        <a href="kimia_guru.html">Kelas 11B</a>
+        <a href="kimia_guru.html">Kelas 12A</a>
+        <a href="kimia_guru.html">Kelas 12B</a>
+      </div>
+    </div>
+    <a href="profil_guru.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
+  </div>
+
+  <div class= "main ">
+    <br>
+    <h2>Dashboard Guru</h2>
+    <br>
+    <div class="row">
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 10A <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 10B <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32"> 
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 11A <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="row">
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 11B <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32">
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 12A <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="size-32"> 
+        <div class="card-small">
+          <div class="card-body-small">
+            <h3>Kelas 12B <i class="fas fa-school"></i></h3>
+            <a href="kimia_guru.html">Lihat <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>   
+    </div>
+    <br>
+
+    <div style="max-width: 97%;">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Jadwal Hari ini</h3>
+          </div>
+          <table class="tabel">
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Kelas</th>
+              <th>Jam</th>
+            </tr>
+            <tr>
+              <td rowspan="3">Kimia</td>
+              <td>10A</td>
+              <td>08.00 - 09.00</td>
+            </tr>
+            <tr>
+              <td>10B</td>
+              <td>09.30 - 11.00</td>
+            </tr>
+            <tr>
+              <td>11A</td>
+              <td>12.00 - 13.30</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Tugas Yang Diberikan</h3>
+          </div>
+          <table class="tabel">
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Kelas</th>
+              <th>Deskripsi</th>
+              <th>Deadline</th>
+              <th>Aksi</th>
+            </tr>
+            <tr>
+              <td>Kimia</td>
+              <td>10A</td>
+              <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
+              <td>11/09/2019</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'detail_tugas.html'"><i class="fas fa-eye"></i> Lihat</button>
+                <button class="btn-orange" onclick="window.location.href = 'edit_tugas.html'"><i class="far fa-edit"></i> Edit</button>
+              </td>
+            </a>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+</body>
+</html>
+

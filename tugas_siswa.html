@@ -3,77 +3,141 @@
 
 <head>
 	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Tugas</title>
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Tugas</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body class="bg-gray">
-	<div id="mySidenav" class="sidenav font">
-  <a href="dashboard_siswa.html">E-LEARNING</a>
-  <hr>
-  <a href="dashboard_siswa.html">Dashboard</a>
-  <a href="jadwal_siswa.html">Jadwal</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a>Mata Pelajaran</a>
-    </button>
-    <div class="dropdown-content">
-      <a href="bi.html">Bahasa Indonesia</a>
-      <a href="bing.html">Bahasa Inggris</a>
-      <a href="bio.html">Biologi</a>
-      <a href="fisika.html">Fisika</a>
-      <a href="kimia.html">Kimia</a>
-      <a href="mtk.html">Matematika</a>
-    </div>
-  </div>
-  <a href="tugas_siswa.html">Tugas</a>
-  
-  <hr>
-  <a href="profil_siswa.html">Profil</a>
-   <a href="index.html">Logout</a>
-</div>
-
-<div class= "main ">
-  <h2>Daftar Tugas Siswa</h2>
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <h3>Tugas</h3>
+	<div class="sidenav font">
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_siswa.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a><i class="fas fa-clipboard-list"></i>
+          Mata Pelajaran
+        </a>
+      </button>
+      <div class="dropdown-content">
+        <a href="bi.html">Bahasa Indonesia</a>
+        <a href="bing.html">Bahasa Inggris</a>
+        <a href="bio.html">Biologi</a>
+        <a href="fisika.html">Fisika</a>
+        <a href="kimia.html">Kimia</a>
+        <a href="mtk.html">Matematika</a>
       </div>
-      <table class="tabel">
-        <tr>
-          <th>Mata Pelajaran</th>
-          <th>Deskripsi</th>
-          <th>Deadline</th>
-          <th>Tanggal Kumpulkan</th>
-          <th>Status</th>
-          <th>Aksi</th>
-        </tr>
-        <tr>
-          <td>Fisika</td>
-          <td>Mengerjakan Latihan Soal di Buku halaman 20</td>
-          <td>11/08/2019</td>
-          <td>10/08/2019</td>
-          <td>Sudah dikerjakan</td>
-          <td><button class="btn-blue">Lihat</button></td>
-        </tr>
-        <tr>
-          <td>Matematika</td>
-          <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
-          <td>11/09/2019</td>
-          <td></td>
-          <td>Belum dikerjakan</td>
-          <td><button class="btn-orange">Submit</button></td>
+    </div>
+    <a href="tugas_siswa.html">
+      <i class="fas fa-list"></i>
+      Tugas
+    </a>
+    <a href="profil_siswa.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
+  </div>
+
+  <div class= "main ">
+    <br>
+    <h2>Daftar Tugas Siswa</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <h3>Tugas</h3>
+        </div>
+        <table class="tabel">
+          <tr>
+            <th>Mata Pelajaran</th>
+            <th>Deskripsi</th>
+            <th>Deadline</th>
+            <th>Tanggal Kumpulkan</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+          <tr>
+            <td>Fisika</td>
+            <td>Mengerjakan Latihan Soal di Buku halaman 20</td>
+            <td>11/08/2019</td>
+            <td>10/08/2019</td>
+            <td>Sudah dikerjakan</td>
+            <td><button class="btn-blue"><i class="fas fa-eye"></i> Lihat</button></td>
+          </tr>
+          <tr>
+            <td>Matematika</td>
+            <td>Mengerjakan Latihan Soal di Buku halaman 11</td>
+            <td>11/09/2019</td>
+            <td></td>
+            <td>Belum dikerjakan</td>
+            <td><button class="btn-orange" id="btn_tgs" type="button"><i class="fas fa-upload"></i> Submit</button></td>
           </a>
         </tr>
       </table>
+
+      <div id="id_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Upload Tugas</h2></div>
+              <div class="modal-body">
+                <form class="user" id = "materi">
+                  <table>
+                    <tr>
+                      <th>Keterangan : </th>
+                      <th><div class="form-group"><textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea> </div></th>          
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <th><div class="form-group"><input type="file" class="form-control" ></div></th>
+                    </tr>
+                  </table>
+                  <button type="button" class="btn-green" style="margin-left: 16%" id="btn_simpan"  >Simpan</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 </div>
-<!-- <footer>
-    <div>
-      <span>Copyright &copy; e-learning 2019</span>
-    </div>
-  </footer>  -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  $("#btn_tgs").click(function(event) {
+    modalShow1();
+
+    $(".close").click(function(event) {
+      modalHide1();
+    });
+
+    $("#btn_simpan").click(function(event) {
+      modalHide1();
+    });
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('id_modal');
+      if(event.target == modal){
+        modalHide1();
+      }
+    };
+  });
+</script>
+
 </body>
 </html>
 

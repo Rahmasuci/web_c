@@ -3,80 +3,167 @@
 
 <head>
 	<link href="./css/style.css" rel="stylesheet">
-	<title>E-Learning - Mata Pelajaran</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Mata Pelajaran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body class="bg-gray">
-	<div id="mySidenav" class="sidenav font">
-  <a href="dashboard_siswa.html">E-LEARNING</a>
-  <hr>
-  <a href="dashboard_siswa.html">Dashboard</a>
-  <a href="jadwal_siswa.html">Jadwal</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a>Mata Pelajaran</a>
-    </button>
-    <div class="dropdown-content">
-      <a href="bi.html">Bahasa Indonesia</a>
-      <a href="bing.html">Bahasa Inggris</a>
-      <a href="bio.html">Biologi</a>
-      <a href="fisika.html">Fisika</a>
-      <a href="kimia.html">Kimia</a>
-      <a href="mtk.html">Matematika</a>
+  <div class="sidenav font">
+    <a><i class="fas fa-book-reader"></i>
+    E-LEARNING</a>
+    <a href="dashboard_siswa.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_siswa.html">
+      <i class="fas fa-calendar-day"></i>
+    Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a><i class="fas fa-clipboard-list"></i>
+          Mata Pelajaran
+        </a>
+      </button>
+      <div class="dropdown-content">
+        <a href="bi.html">Bahasa Indonesia</a>
+        <a href="bing.html">Bahasa Inggris</a>
+        <a href="bio.html">Biologi</a>
+        <a href="fisika.html">Fisika</a>
+        <a href="kimia.html">Kimia</a>
+        <a href="mtk.html">Matematika</a>
+      </div>
+    </div>
+    <a href="tugas_siswa.html">
+      <i class="fas fa-list"></i>
+      Tugas
+    </a>
+    <a href="profil_siswa.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
+  </div>
+
+  <div class= "main ">
+    <br>
+    <h2>Mata Pelajaran Siswa</h2>
+    <br>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h3>Biologi (Bu Bunga)</h3>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id = "list_materi" page="">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-1</h3>
+              <hr>
+              <p>Materi ke - 1</p>
+            </div>
+          </div>
+        </div>  
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-2</h3>
+              <hr>
+              <p>Materi ke - 2</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-3</h3>
+              <hr>
+              <p>Materi ke - 3</p>
+            </div>
+          </div>
+        </div> 
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-4</h3>
+              <hr>
+              <p>Materi ke - 4</p>
+            </div>
+          </div>
+        </div> 
+        <br> 
+        <div>
+          <button class="btn-blue" id="load_btn" style="margin-left: 40%;">More</button>
+        </div>
+        <br>
+      </div>
     </div>
   </div>
-  <a href="tugas_siswa.html">Tugas</a>
-  
-  <hr>
-  <a href="profil_siswa.html">Profil</a>
-  <a href="index.html">Logout</a>
-</div>
 
-<div class= "main ">
-  <h2>Mata Pelajaran Siswa</h2>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <h3>Biologi (Bu Bunga)</h3>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <h3>Minggu Ke-1</h3>
-          <hr>
-          <p>jkvbayvurbvy</p>
-        </div>
-      </div>
-    </div>  
-    <br>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <h3>Minggu Ke-2</h3>
-          <hr>
-          <p>jkvbayvurbvy</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <h3>Minggu Ke-3</h3>
-          <hr>
-          <p>jkvbayvurbvy</p>
-        </div>
-      </div>
-    </div>      
-</div>
-<!-- <footer>
-    <div>
-      <span>Copyright &copy; e-learning 2019</span>
-    </div>
-  </footer>  -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main_script.js"></script>
+  <script type="text/javascript">
+    $("#load_btn").click(function(event) {
+      var hal = $("#list_materi").attr('page');
+      hal = Number(hal);
+      if (hal == "") {
+        hal = 2;
+      }
+      else{
+        hal += 1;
+      }
+
+      $("#list_materi").attr('page', hal);
+      if (hal == 4) {
+        $("#load_btn").hide();
+      }
+
+      var path = "json/materi_siswa_"+hal+".json";
+
+      $.ajax({
+        url: path,
+        type: 'GET',
+        dataType: 'json',
+        // data: { }
+      })
+      .done(function(hasil) {
+        console.log("success");
+        var gabung = "";
+        $.each(hasil, function(index, val) {
+         gabung += `
+         <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>`+val.minggu+`</h3>
+              <hr>
+              <p>`+val.materi+`</p>
+            </div>
+          </div>
+         </div>  
+         <br>
+         `;
+       });
+
+        $("#list_materi").append(gabung);
+      })
+      .fail(function() {
+        console.log("error");
+      });
+      
+    });
+
+  </script>
+
 </body>
 </html>
 

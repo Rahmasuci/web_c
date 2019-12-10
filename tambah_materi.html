@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <link href="./css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/all.css">
+ <title>E-Learning - Materi</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+ <div class="sidenav font">
+  <a><i class="fas fa-book-reader"></i> E-LEARNING</a>
+  <a href="dashboard_guru.html">
+    <i class="fas fa-tachometer-alt"></i>
+    Dashboard </a>
+  <a href="jadwal_guru.html">    <i class="fas fa-calendar-day"></i>Jadwal</a>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a><i class="fas fa-stream"></i> Kelola Materi </a></button>
+    <div class="dropdown-content">
+      <a href="tambah_materi.html">Tambah Materi</a>
+      <a href="lihat_materi.html">Lihat Materi</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a><i class="fas fa-th-list"></i>
+        Kelola Tugas
+      </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="tambah_tugas.html">Tambah Tugas</a>
+      <a href="lihat_tugas.html">Lihat Tugas</a>
+    </div>
+  </div>
+  <a href="profil_guru.html">
+    <i class="fas fa-user-circle"></i>
+    Profil
+  </a>
+  <a href="index.html">
+    <i class="fas fa-sign-out-alt"></i>
+    Logout
+  </a>
+</div>
+<div class= "main ">
+  <br>
+  <h2>Tambah Materi</h2>
+  <div style="max-width: 97%">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <h3>Tambahkan Materi Baru</h3>
+      </div>
+      <form class="user" id = "materi">
+        <table>
+          <tr>
+            <th>Kelas : </th>
+            <th><div class="form-group">
+              <select name="kelas" class="form-control" id="pilih-kelas" style="width: 310px; height: 45px">
+                <option value="1">Pilih Kelas</option>
+                <option value="2">10A</option>
+                <option value="3">10B</option>
+                <option value="4">11A</option>
+                <option value="5">11B</option>
+                <option value="6">12A</option>
+                <option value="7">12B</option>
+              </select>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>Deskripsi : </th>
+          <th><div class="form-group">
+            <textarea rows="5" cols="50" name="deskripsi" form="materi"></textarea>
+            </div>
+          </th>          
+        </tr>
+        <tr>
+          <th></th>
+          <th><div class="form-group">
+            <input type="file" class="form-control" ></th>
+          </div>
+        </tr>
+      </table>
+      <button type="submit" class="btn-green margin-left-10">Simpan</button>
+    </form>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+

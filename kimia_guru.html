@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Mata Pelajaran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="bg-gray">
+  <div class="sidenav font">
+    <a><i class="fas fa-book-reader"></i>
+      E-LEARNING
+    </a>
+    <a href="dashboard_guru.html">
+      <i class="fas fa-tachometer-alt"></i>
+      Dashboard
+    </a>
+    <a href="jadwal_guru.html">
+      <i class="fas fa-calendar-day"></i>
+      Jadwal
+    </a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a><i class="fas fa-school"></i> Kelas yang diajari</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="kimia_guru.html">Kelas 10A</a>
+        <a href="kimia_guru.html">Kelas 10B</a>
+        <a href="kimia_guru.html">Kelas 11A</a>
+        <a href="kimia_guru.html">Kelas 11B</a>
+        <a href="kimia_guru.html">Kelas 12A</a>
+        <a href="kimia_guru.html">Kelas 12B</a>
+      </div>
+    </div>
+    <a href="profil_guru.html">
+      <i class="fas fa-user-circle"></i>
+      Profil
+    </a>
+    <a href="index.html">
+      <i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
+  </div>
+
+  <div class= "main ">
+    <br>
+    <h2>Pelajaran Guru</h2>
+    <br>
+    <div style="max-width: 97%;">
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h3>Kimia (10A)</h3>
+          </div>
+        </div>
+      </div> 
+      <br>
+      <div id = "list_minggu" page="">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-1</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
+              <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div>  
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-2</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>
+              <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-3</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>  
+              <button class="btn-blue" id="btn_tugas"><i class="fas fa-plus"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div> 
+        <br> 
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-4</h3>
+              <hr>
+              <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i> Tambah Materi</button>  
+              <button class="btn-blue" id="btn_tugas"><i class="fas fa-plus"></i>Tambah Tugas</td></button>
+            </div>
+          </div>
+        </div> 
+        <br>
+      </div>
+      <div>
+        <button class="btn-green" id="load_btn" style="margin-left: 40%;"><i class="fas fa-plus"></i> Tambah 4 minggu</button>
+      </div>  
+      <br>  
+    </div>   
+    
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Tambahkan Tugas</h2></div>
+          <div class="modal-body">
+           <form class="user" id = "tgs">
+            <table>
+              <tr>
+                <th>Deskripsi : </th>
+                <th><textarea rows="4" cols="50" name="deskripsi" form="tgs" class="form-control height-100"></textarea></th>
+              </tr>
+              <tr>
+                <th>Deadline : </th>
+                <th><div class="form-group"><input type="date" class="form-control" id="InputDeadline"></div></th>
+              </tr>
+            </table>
+            <button type="button" class="btn-green margin-left-13">Simpan</button>
+          </form>
+        </div>            
+      </div>
+    </div>
+
+    <div id="id_modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Tambahkan Materi</h2></div>
+          <div class="modal-body">
+            <form class="user" id = "materi">
+              <table>
+                <tr>
+                  <th>Deskripsi : </th>
+                  <th><div class="form-group"><textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea> </div></th>          
+                </tr>
+                <tr>
+                  <th></th>
+                  <th><div class="form-group"><input type="file" class="form-control" ></div></th>
+                </tr>
+              </table>
+              <button type="button" class="btn-green margin-left-13">Simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main_script.js"></script>
+<script type="text/javascript">
+  $("#load_btn").click(function(event) {
+    var hal = $("#list_minggu").attr('page');
+    hal = Number(hal);
+    if (hal == "") {
+      hal = 2;
+    }
+    else{
+      hal += 1;
+    }
+
+    $("#list_minggu").attr('page', hal);
+    if (hal == 4) {
+      $("#load_btn").hide();
+    }
+
+    var path = "json/materi_guru_"+hal+".json";
+
+    $.ajax({
+      url: path,
+      type: 'GET',
+      dataType: 'json',
+        // data: { }
+      })
+    .done(function(hasil) {
+      console.log("success");
+      var gabung = "";
+      $.each(hasil, function(index, val) {
+       gabung += `
+       <div class="card">
+       <div class="card-body">
+       <div>
+       <h3>`+val.minggu+`</h3>
+       <hr>
+       <button class="btn-orange" id="btn_materi"><i class="fas fa-plus"></i>Tambah Materi</button>
+       <button class="btn-blue" id="btn_tugas"><i class="far fa-edit"></i>Tambah Tugas</td></button>
+       </div>
+       </div>
+       </div>  
+       <br>
+       `;
+     });
+
+      $("#list_minggu").append(gabung);
+    })
+    .fail(function() {
+      console.log("error");
+    });
+
+  });
+
+  $("#btn_materi").click(function(event) {
+    modalShow1();
+
+    $(".close").click(function(event) {
+      modalHide1();
+    });
+
+    
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('id_modal');
+      if(event.target == modal){
+        modalHide1();
+      }
+    };
+  });
+
+  $("#btn_tugas").click(function(event) {
+    modalShow2();
+
+    $(".close").click(function(event) {
+      modalHide2();
+    });
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('modal2');
+      if(event.target == modal){
+        modalHide2();
+      }
+    };
+
+  });
+  // $("#modal_close ").updateKelas();
+</script>
+</body>
+</html>
+
