@@ -167,11 +167,35 @@
                 <td>11/09/2019</td>
                 <td></td>
                 <td>Belum dikerjakan</td>
-                <td><button class="btn-orange">Submit</button></td>
+                <td><button class="btn-orange" id= "btn_tgs" type="button"><i class="fas fa-upload"></i> Submit</button></td>
               </a>
             </tr>
           </tbody>
         </table>
+
+        <div id="id_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Upload Tugas</h2></div>
+              <div class="modal-body">
+                <form class="user" id = "materi">
+                  <table>
+                    <tr>
+                      <th>Keterangan : </th>
+                      <th><div class="form-group"><textarea rows="9" cols="50" name="deskripsi" form="materi" class="form-control height-100"></textarea> </div></th>          
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <th><div class="form-group"><input type="file" class="form-control" ></div></th>
+                    </tr>
+                  </table>
+                  <button type="button" class="btn-green" style="margin-left: 16%;" id="btn_simpan"  >Simpan</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -181,6 +205,24 @@
 <script src="js/main_script.js"></script>
 <script type="text/javascript">
   cariTabel();
+  $("#btn_tgs").click(function(event) {
+    modalShow1();
+
+    $(".close").click(function(event) {
+      modalHide1();
+    });
+
+    $("#btn_simpan").click(function(event) {
+      modalHide1();
+    });
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('id_modal');
+      if(event.target == modal){
+        modalHide1();
+      }
+    };
+  });
 </script>
 
 </body>

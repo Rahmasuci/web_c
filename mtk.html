@@ -61,48 +61,108 @@
         </div>
       </div>
       <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-1</h3>
-            <hr>
-            <p>Materi ke - 1</p>
+      <div id = "list_materi" page="">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-1</h3>
+              <hr>
+              <p>Materi ke - 1</p>
+            </div>
+          </div>
+        </div>  
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-2</h3>
+              <hr>
+              <p>Materi ke - 2</p>
+            </div>
           </div>
         </div>
-      </div>  
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-2</h3>
-            <hr>
-            <p>Materi ke - 2</p>
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-3</h3>
+              <hr>
+              <p>Materi ke - 3</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-3</h3>
-            <hr>
-            <p>Materi ke - 3</p>
+        </div> 
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Minggu Ke-4</h3>
+              <hr>
+              <p>Materi ke - 4</p>
+            </div>
           </div>
-        </div>
+        </div> 
+        <br> 
       </div> 
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h3>Minggu Ke-4</h3>
-            <hr>
-            <p>Materi ke - 4</p>
-          </div>
-        </div>
-      </div> 
-      <br> 
-    </div>      
+      <div>
+        <button class="btn-blue" id="load_btn" style="margin-left: 40%;">More</button>
+      </div>     
+    </div>
   </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main_script.js"></script>
+  <script type="text/javascript">
+    $("#load_btn").click(function(event) {
+      var hal = $("#list_materi").attr('page');
+      hal = Number(hal);
+      if (hal == "") {
+        hal = 2;
+      }
+      else{
+        hal += 1;
+      }
+
+      $("#list_materi").attr('page', hal);
+      if (hal == 4) {
+        $("#load_btn").hide();
+      }
+
+      var path = "json/materi_siswa_"+hal+".json";
+
+      $.ajax({
+        url: path,
+        type: 'GET',
+        dataType: 'json',
+        // data: { }
+      })
+      .done(function(hasil) {
+        console.log("success");
+        var gabung = "";
+        $.each(hasil, function(index, val) {
+         gabung += `
+         <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>`+val.minggu+`</h3>
+              <hr>
+              <p>`+val.materi+`</p>
+            </div>
+          </div>
+         </div>  
+         <br>
+         `;
+       });
+
+        $("#list_materi").append(gabung);
+      })
+      .fail(function() {
+        console.log("error");
+      });
+      
+    });
+
+  </script>
+
 </body>
 </html>
 
