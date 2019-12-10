@@ -1,100 +1,87 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-    	<link href="./css/style.css" rel="stylesheet">
-    	<title>E-Learning - Lihat Akun</title>
-    </head>
+<head>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>E-Learning - Lihat Akun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
 
-    <body class="bg-gray">
-    	<div id="mySidenav" class="sidenav font">
-        <a href="dashboard_admin.html">E-LEARNING</a>
-        <hr>
-        <a href="dashboard_admin.html">Dashboard</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            <a>Kelola Akun</a>
-          </button>
-          <div class="dropdown-content">
-            <a href="tambah_akun.html">Tambah Akun</a>
-            <a href="lihat_akun.html">Lihat Akun</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-            <a>Kelola Jadwal</a>
-          </button>
-          <div class="dropdown-content">
-            <a href="tambah_jadwal.html">Tambah Jadwal</a>
-            <a href="lihat_jadwal.html">Lihat Jadwal</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-            <a>Kelola Mata Pelajaran</a>
-          </button>
-          <div class="dropdown-content">
-            <a href="tambah_pelajaran.html">Tambah Mata Pelajaran</a>
-            <a href="lihat_pelajaran.html">Lihat Mata Pelajaran</a>
-          </div>
-        </div>
-        <hr>
-        <a href="profil_admin.html">Profil</a>
-        <a href="index.html">Logout</a>
-      </div>
+<body class="bg-gray">
+  <div id="mySidenav" class="sidenav font">
+    <a href="dashboard_admin.html"><i class="fas fa-book-reader"></i> E-LEARNING</a>
+    <a href="dashboard_admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="lihat_pelajaran.html"><i class="fas fa-clipboard-list"></i> Lihat Pelajaran</a>
+    <a href="lihat_kelas.html"><i class="fas fa-school"></i> Lihat Kelas</a>
+    <a href="lihat_jadwal.html"> <i class="fas fa-calendar-day"></i> Lihat Jadwal</a>
+    <div class="dropdown">
+      <button class="dropbtn"><a><i class="fas fa-user-cog"></i> Kelola Akun</a></button>
+      <div class="dropdown-content">
+        <a href="tambah_akun.html">Tambah Akun</a>
+        <a href="lihat_akun.html">Lihat Akun</a>
+      </div>  
+    </div> 
+    <a href="profil_admin.html"><i class="fas fa-user-circle"></i> Profil</a>
+    <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+  </div>
 
-      <div class= "main ">
-        <h2>Lihat Akun</h2>
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <h3>Daftar Semua User</h3>
-            </div>
-            <table class="tabel">
-              <tr>
-                <th>NIS / NIP</th>
-                <th>Nama Lengkap</th>
-                <th>Tempat Lahir</th>
-                <th>Tanggal Lahir</th>
-                <th>Jenis Kelamin</th>
-                <th>Jabatan</th>
-                <th>Status</th>
-                <th>Aksi</th>
-              </tr>
-              <tr>
-                <td>16000</td>
-                <td>Mustika Rahmasuci</td>
-                <td>Jember</td>
-                <td>23/04/2003</td>
-                <td>Perempuan</td>
-                <td>Siswa</td>
-                <td>Aktif</td>
-                <td><button class="btn-blue">Edit</button></td>
-              </tr>
-              <tr>
-                <td>19xxxxxxxxxx</td>
-                <td>Bayu Putra</td>
-                <td>Banyuwangi</td>
-                <td>18/12/1988</td>
-                <td>Laki-laki</td>
-                <td>Guru</td>
-                <td>Aktif</td>
-                <td><button class="btn-blue">Edit</button></td>
-              </tr>
-              <tr>
-                <td>19xxxxxxxxxx</td>
-                <td>Joko</td>
-                <td>Surabaya</td>
-                <td>04/06/1990</td>
-                <td>Laki-laki</td>
-                <td>Admin</td>
-                <td>Aktif</td>
-                <td><button class="btn-blue">Edit</button></td>
-              </tr>
-            </table>
+  <div class= "main ">
+    <br>
+    <h2>Lihat Akun</h2>
+    <br>
+    <div style="max-width: 97%">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <h3>Daftar Semua User</h3>
           </div>
+          <table class="tabel">
+            <tr>
+              <th>NIS / NIP</th>
+              <th>Nama Lengkap</th>
+              <th>Tempat Lahir</th>
+              <th>Tanggal Lahir</th>
+              <th>Jenis Kelamin</th>
+              <th>Jabatan</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+            <tr>
+              <td>16000</td>
+              <td>Mustika Rahmasuci</td>
+              <td>Jember</td>
+              <td>23/04/2003</td>
+              <td>Perempuan</td>
+              <td>Siswa</td>
+              <td>Aktif</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_akun.html'" ><i class="far fa-edit"></i>Edit</button></td>
+            </tr>
+            <tr>
+              <td>19xxxxxxxxxx</td>
+              <td>Bayu Putra</td>
+              <td>Banyuwangi</td>
+              <td>18/12/1988</td>
+              <td>Laki-laki</td>
+              <td>Guru</td>
+              <td>Aktif</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_akun.html'" ><i class="far fa-edit"></i>Edit</button></td>
+            </tr>
+            <tr>
+              <td>19xxxxxxxxxx</td>
+              <td>Joko</td>
+              <td>Surabaya</td>
+              <td>04/06/1990</td>
+              <td>Laki-laki</td>
+              <td>Admin</td>
+              <td>Aktif</td>
+              <td><button class="btn-blue" onclick="window.location.href = 'edit_akun.html'" ><i class="far fa-edit"></i>Edit</button></td>
+            </tr>
+          </table>
         </div>
       </div>
+    </div>
+  </div>
 
-    </body>
-  </html>
+</body>
+</html>
